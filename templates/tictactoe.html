@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+
+            margin: 0;
+            padding: 0;
+        }
+        .yo{
+         font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: white;
+            height: 85vh;
+            }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+                    border: none;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+        .button {
+                    text-decoration: none;
+                    padding: 1rem 1.5rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+                    border: none;
+                    font-size: 1.5rem;
+        }
+
+        .button:hover {
+            background-color: #e0c163;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+
+
+        iframe {
+            width: 80%;
+            height: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('games') }}" class="logout-button">Back to Games</a>
+        </div>
+    </div>
+    <h1>Tic Tac Toe</h1>
+    <div class="button-container">
+        <button onclick="startGame('computer')" class="button"> Play with Computer</button>
+        <button onclick="startGame('friend')" class="button">Play with a Friend</button>
+
+    </div>
+    <div class="yo">
+        <iframe id="game-frame" src="" style="display:none;"></iframe>
+    </div>
+
+    <script>
+        function startGame(mode) {
+            const iframe = document.getElementById('game-frame');
+            if (mode === 'computer') {
+                iframe.src = '/tictactoe/computer';
+            } else if (mode === 'friend') {
+                iframe.src = '/tictactoe/friend';
+            }
+            iframe.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

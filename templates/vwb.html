@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Whiteboard</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            background-color: #FFC107;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo{
+                     color: #FFC107;
+                     display: flex;
+                     align-items: center;
+
+                    }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+        .video-container {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid #6A1B9A;
+            padding: 10px;
+            margin-top:4rem;
+
+        }
+
+        .ai-response-container {
+            flex: 1;
+            padding: 20px;
+            margin-top:4rem;
+        }
+
+        #video {
+            width: 90%;
+            border: 2px solid #6A1B9A;;
+            border-radius: 10px;
+        }
+
+        .ai-response {
+            background-color:#6A1B9A;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 16px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('activity') }}" class="logout-button">Back to Activity</a>
+        </div>
+    </div>
+    <div class="video-container">
+        <img id="video" alt="Live Video Feed">
+    </div>
+    <div class="ai-response-container">
+        <h2>AI Responses</h2>
+        <div id="responses" class="ai-response"></div>
+    </div>
+
+    <script>
+        const socket = io();
+
+        // Start virtual whiteboard
+        socket.emit("start_virtual_whiteboard");
+
+        // Update video feed
+        socket.on("video_frame", (data) => {
+            const videoElement = document.getElementById("video");
+            videoElement.src = `data:image/jpeg;base64,${data.frame}`;
+        });
+
+        // Update AI response
+        socket.on("ai_response", (data) => {
+            const responsesContainer = document.getElementById("responses");
+            const responseText = document.createElement("p");
+            responseText.textContent = data.text;
+            responsesContainer.appendChild(responseText);
+        });
+
+        socket.on("redirect", (data) => {
+            console.log("Redirecting to:", data.url); // Debugging log
+            window.location.href = data.url; // Redirect to the URL provided by the server
+        });
+
+    </script>
+</body>
+</html>

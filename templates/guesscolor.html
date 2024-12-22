@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .yo
+        {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f9;
+            color: #4a4a4a;
+            height: 100vh;
+        }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+                    border: none;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+
+
+        h1 {
+            font-size: 36px;
+            color: #6A1B9A;
+            margin-bottom:0;
+        }
+        h2 {
+
+            color: #6A1B9A;
+        }
+
+        #timer, #score {
+            font-size: 20px;
+            margin: 10px;
+            color:#6A1B9A;
+        }
+
+        #game-word {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px;
+            color:#6A1B9A;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 2px solid #9c27b0;
+            margin-top: 10px;
+        }
+
+        .game-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color:#6A1B9A;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .game-button:hover {
+            background-color: #7b1fa2;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .modal-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6A1B9A;
+            margin: 20px;
+        }
+
+        .modal-body {
+            font-size: 18px;
+            color: #6A1B9A;
+            align-items:center;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('games') }}" class="logout-button">Back to Games</a>
+        </div>
+    </div>
+    <div class="yo">
+        <h1>Color Guessing Game</h1>
+        <h2>Enter the color of the text and not the text itself!</h2>
+        <div id="timer">Time left: 30</div>
+        <div id="score">Score: 0</div>
+        <div id="game-word" style="color: black;">Press Start</div>
+        <input type="text" id="colorInput" placeholder="Type the color here..." disabled>
+        <button id="startButton" class="game-button">Start Game</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">Game Over</div>
+            <div class="modal-body" id="modalMessage"></div>
+            <button id="restartButton" class="game-button">Restart</button>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let gameActive = false;
+
+        document.getElementById('startButton').addEventListener('click', () => {
+            if (!gameActive) {
+                gameActive = true;
+                document.getElementById('colorInput').disabled = false;
+                document.getElementById('colorInput').focus();
+                document.getElementById('startButton').style.display = 'none';
+                socket.emit('start_color_game');
+                socket.emit('start_timer');
+            }
+        });
+
+        document.getElementById('colorInput').addEventListener('keydown', (event) => {
+            if (event.key === "Enter") {
+                const colorInput = document.getElementById('colorInput').value;
+                socket.emit('check_color', { color: colorInput });
+                document.getElementById('colorInput').value = '';
+            }
+        });
+
+        socket.on('update_game', (data) => {
+            document.getElementById('score').textContent = "Score: " + data.score;
+            document.getElementById('game-word').textContent = data.next_word;
+            document.getElementById('game-word').style.color = data.next_color;
+        });
+
+        socket.on('update_timer', (data) => {
+            document.getElementById('timer').textContent = "Time left: " + data.timeleft;
+            if (data.timeleft <= 0) {
+                document.getElementById('colorInput').disabled = true;
+                gameActive = false;
+            }
+        });
+
+        socket.on('game_over', (data) => {
+            const finalScore = data.score || 0;
+            document.getElementById('startButton').style.display = 'inline-block';
+            gameActive = false;
+            showModal(finalScore, data.message);
+        });
+
+        function showModal(score, message) {
+            const modal = document.getElementById('resultModal');
+            const modalMessage = document.getElementById('modalMessage');
+            modalMessage.textContent = `Game Over!! You scored: ${score} points!`;
+            modal.style.display = 'flex';
+        }
+
+        document.getElementById('restartButton').onclick = () => {
+            window.location.href = "{{ url_for('guess_color_page') }}";
+        };
+
+    </script>
+</body>
+</html>

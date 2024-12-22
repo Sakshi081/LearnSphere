@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finger Counting - Subtraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #6A1B9A;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        #video {
+            border: 2px solid #fff;
+            margin-top: 20px;
+        }
+
+        #count-display {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('about')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="logout-button">Go to home</a>
+        </div>
+    </div>
+    <h1>Finger Counting for Subtraction</h1>
+
+    <!-- Video feed displaying the webcam -->
+    <img id="video" src="" alt="Live Video Feed"/>
+
+    <!-- Display subtraction result -->
+    <div id="count-display">Waiting for gesture...</div>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+
+        // Handle the redirection when thumbs-up gesture is detected
+        socket.on('redirect', (data) => {
+            window.location.href = data.url;
+        });
+
+        // Handle the video feed from the server
+        socket.on('video_feed', (data) => {
+            const videoElement = document.getElementById('video');
+            const blob = new Blob([data], { type: 'image/png' });
+            videoElement.src = URL.createObjectURL(blob);
+        });
+
+        // Handle display of subtraction result
+        socket.on('subtraction_result', (result) => {
+            const display = document.getElementById('count-display');
+            display.textContent = result;
+        });
+
+        // Start finger counting for subtraction when the page loads
+        socket.emit('subtraction');
+    </script>
+</body>
+</html>

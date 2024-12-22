@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #6A1B9A;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .active {
+            background-color: #FFC107 !important;
+        }
+
+        #score, #timer {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .startButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #6A1B9A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        .startButton:hover {
+            background-color: #7b1fa2;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('about')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('games') }}" class="logout-button">Go to Games</a>
+        </div>
+    </div>
+
+    <h1>Whack-a-Mole</h1>
+    <div id="score">Score: 0</div>
+    <div id="timer">Time left: 60</div>
+    <div class="button-container">
+        <button id="startButton" class="startButton">Start Game</button>
+        <button id="restartButton" class="startButton" style="display : none;">Restart Game</button>
+    </div>
+
+    <div class="game-container">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+        <div class="circle" id="circle6"></div>
+        <div class="circle" id="circle7"></div>
+        <div class="circle" id="circle8"></div>
+    </div>
+
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        let score = 0;
+        let timer = 60;
+        let gameInterval, timerInterval;
+
+        const circles = document.querySelectorAll('.circle');
+        const scoreDisplay = document.getElementById('score');
+        const timerDisplay = document.getElementById('timer');
+        const startButton = document.getElementById('startButton');
+        const restartButton = document.getElementById('restartButton');
+        const modal = document.getElementById('resultModal');
+        const modalMessage = document.getElementById('modalMessage');
+
+        function startGame() {
+            score = 0;
+            timer = 60;
+            restartButton.style.display = 'flex';
+            scoreDisplay.textContent = `Score: ${score}`;
+            timerDisplay.textContent = `Time left: ${timer}`;
+            startButton.style.display = 'none';
+
+            timerInterval = setInterval(updateTimer, 1000);
+            gameInterval = setInterval(() => {
+                resetCircles();
+                const randomIndex = Math.floor(Math.random() * circles.length);
+                circles[randomIndex].classList.add('active');
+            }, 2000);
+        }
+
+        function updateTimer() {
+            const now = Date.now();
+            timer--;
+            timerDisplay.textContent = `Time left: ${timer}`;
+            if (timer <= 0) {
+                clearInterval(timerInterval);
+                clearInterval(gameInterval);
+                endGame();
+            }
+        }
+
+        function resetCircles() {
+            circles.forEach(circle => circle.classList.remove('active'));
+        }
+
+        function endGame() {
+            modalMessage.textContent = `You whacked ${score} moles!`;
+            modal.style.display = 'block';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                startButton.style.display = 'inline-block';
+            }, 3000);
+        }
+
+        circles.forEach(circle => {
+            circle.addEventListener('click', () => {
+                if (circle.classList.contains('active')) {
+                    score++;
+                    scoreDisplay.textContent = `Score: ${score}`;
+                    circle.classList.remove('active');
+                }
+            });
+        });
+
+        restartButton.addEventListener('click', () =>
+        {
+            location.reload();
+        });
+
+        startButton.addEventListener('click', startGame);
+    </script>
+</body>
+</html>

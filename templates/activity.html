@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+        /* Content Section */
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            color: #6A1B9A;
+
+            text-shadow: 2px 2px 5px white;
+        }
+
+        /* Button Styles */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #6A1B9A;
+            color: #FFC107;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            width: 120px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .button i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background-color: #9a51d6;
+        }
+
+        .button span {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .modal {
+            display: none; /* Start hidden */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+        }
+
+        .modal-overlay {
+            display: none; /* Start hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+
+            <div class="logo">
+
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+
+            </div>
+
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="logout-button">Back to Home</a>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 >Choose an Activity</h1>
+        <div class="buttons">
+            <a href="{{ url_for('count') }}" class="button">Count</a>
+            <a href="{{ url_for('addition') }}" class="button">Addition</a>
+            <a href="{{ url_for('subtraction') }}" class="button">Subtraction</a>
+            <a href="{{ url_for('multiplication') }}" class="button">Multiplication</a>
+              <button class="button" onclick="openModal()">Alphabets</button>
+
+        </div>
+        <div class="buttons">
+            <a href="{{ url_for('vwb') }}" class="button">Virtual Whiteboard</a>
+
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+        <h3>Enter a Letter</h3>
+        <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter (A-Z)">
+        <button onclick="submitLetter()">Submit</button>
+    </div>
+
+    <script>
+        function openModal()
+        {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modal-overlay').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
+        }
+
+        function submitLetter() {
+            const letter = document.getElementById('letter-input').value.trim();
+            if (letter) {
+                window.location.href = `{{ url_for('alphabet') }}?letter=${letter}`;
+            } else {
+                alert('Please enter a valid letter!');
+            }
+        }
+    </script>
+</body>
+</html>

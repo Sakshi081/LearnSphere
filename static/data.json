@@ -1,0 +1,119 @@
+{
+    "pairs": [
+        {
+            "image1": "/static/std1a.png",
+            "image2": "/static/std1b.png",
+            "differences": [
+                {"x": 393, "y": 359, "radius": 15},
+                {"x": 129, "y": 37, "radius": 27},
+                {"x": 306, "y": 269, "radius": 16},
+                {"x": 365, "y": 95, "radius": 23},
+                {"x": 89, "y": 125, "radius": 20},
+                {"x": 176, "y": 127, "radius": 15},
+                {"x": 88, "y": 401, "radius": 32},
+                {"x": 317, "y": 418, "radius": 25},
+                {"x": 350, "y": 170, "radius": 20},
+                {"x": 392, "y": 227, "radius": 10},
+                {"x": 110, "y": 238, "radius": 10},
+                {"x": 256, "y": 165, "radius": 3}
+            ]
+        },
+        {
+            "image1": "/static/std2a.png",
+            "image2": "/static/std2b.png",
+            "differences": [
+                {"x": 368, "y": 328, "radius": 8},
+                {"x": 351, "y": 103, "radius": 12},
+                {"x": 121, "y": 184, "radius": 18},
+                {"x": 270, "y": 122, "radius": 14},
+                {"x": 309, "y": 178, "radius": 7}
+
+            ]
+        },
+        {
+           "image1": "/static/std3a.png",
+            "image2": "/static/std3b.png",
+            "differences": [
+                {"x": 242, "y": 55, "radius": 45},
+                {"x": 192, "y": 239, "radius": 15},
+                {"x": 264, "y": 262, "radius": 14},
+                {"x": 68, "y": 273, "radius": 20},
+                {"x": 164, "y": 370, "radius": 16},
+                {"x": 293, "y": 384, "radius": 36},
+                {"x": 358, "y": 327, "radius": 22},
+                {"x": 114, "y": 67, "radius": 41},
+                {"x": 22, "y": 193, "radius": 34},
+                {"x": 379, "y": 142, "radius": 32}
+
+            ]
+        },
+        {
+            "image1": "/static/std4a.png",
+             "image2": "/static/std4b.png",
+             "differences": [
+                {"x": 242, "y": 156, "radius": 32},
+                {"x": 272, "y": 62, "radius": 20},
+                {"x": 162, "y": 83, "radius": 8},
+                {"x": 175, "y": 363, "radius": 5},
+                {"x": 117, "y": 31, "radius": 20}
+            ]
+        },
+        {
+            "image1": "/static/std5a.png",
+            "image2": "/static/std5b.png",
+            "differences": [
+                {"x": 102, "y": 59, "radius": 48},
+                {"x": 20, "y": 44, "radius": 5},
+                {"x": 20, "y": 130, "radius": 5},
+                {"x": 49, "y": 224, "radius": 8},
+                {"x": 194, "y": 149, "radius": 4},
+                {"x": 323, "y": 136, "radius": 9},
+                {"x": 369, "y": 87, "radius": 24},
+                {"x": 385, "y": 209, "radius": 15}
+            ]
+        },
+        {
+            "image1": "/static/std6a.png",
+            "image2": "/static/std6b.png",
+            "differences": [
+                {"x": 66, "y": 74, "radius": 19},
+                {"x": 244, "y": 61, "radius": 24},
+                {"x": 120, "y": 247, "radius": 18},
+                {"x": 313, "y": 315, "radius": 20},
+                {"x": 338, "y": 352, "radius": 3}
+
+            ]
+        },
+        {
+            "image1": "/static/std7a.png",
+            "image2": "/static/std7b.png",
+            "differences": [
+                {"x": 280, "y": 35, "radius": 5},
+                {"x": 105, "y": 34, "radius": 26},
+                {"x": 120, "y": 130, "radius": 15},
+                {"x": 230, "y": 185, "radius": 10},
+                {"x": 290, "y": 163, "radius": 30},
+                {"x": 232, "y": 147, "radius": 20},
+                {"x": 35, "y": 360, "radius": 17},
+                {"x": 60, "y": 420, "radius": 16}
+
+            ]
+        },
+        {
+            "image1": "/static/std8a.png",
+            "image2": "/static/std8b.png",
+            "differences": [
+                {"x": 35, "y": 215, "radius": 7},
+                {"x": 190, "y": 207, "radius": 4},
+                {"x": 90, "y": 125, "radius": 4},
+                {"x": 190, "y": 69, "radius": 21},
+                {"x": 300, "y": 165, "radius": 15},
+                {"x": 380, "y": 205, "radius": 6}
+
+
+            ]
+        }
+
+
+    ]
+}

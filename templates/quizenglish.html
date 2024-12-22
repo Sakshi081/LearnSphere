@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #9a51d6;
+            color: #ffffff; /* White text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 1em;
+            background-color: #6A1B9A;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFC107;
+        }
+
+        /* Quiz Container */
+        .quiz-container {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            margin: 2em auto;
+            border: 1px solid #444;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Left Pane */
+        .left-pane {
+            flex: 1;
+            background-color: #6A1B9A;;
+            padding: 1em;
+            text-align: center;
+        }
+
+
+
+        #options button {
+            display: block;
+            width: 80%;
+            margin: 0.5em auto;
+            padding: 0.8em;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            background-color: #FFC107;
+            color: #6A1B9A;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #options button:hover {
+            background-color: white;
+        }
+        /*middle pane */
+        .middle-pane {
+            flex: 1;
+            background-color: #6A1B9A;;
+            padding: 2em;
+            display: flex;
+            align-items: center; /* Vertically center the content */
+            justify-content: center; /* Horizontally center the content */
+            border-left: 1px solid #444;
+            border-right: 1px solid #444;
+        }
+
+        .middle-pane img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Right Pane */
+        .right-pane {
+            flex: 1;
+            background-color: #6A1B9A;
+            padding: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #444;
+        }
+
+        #feedback {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            color: #FFC107;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .modal-content {
+            background-color: #33354a;
+            padding: 2em;
+            border-radius: 8px;
+            text-align: center;
+            color: #ffffff;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 1em;
+            color: #f5ba4a;
+        }
+
+        .modal-content button {
+            padding: 0.8em 2em;
+            background-color: #f5ba4a;
+            color: #33354a;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content button:hover {
+            background-color: #f6c76c;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>English Quiz</h1>
+    </nav>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container">
+        <div class="left-pane">
+            <h2 id="question-text"></h2>
+            <div id="options">
+                <!-- Options will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="middle-pane">
+            <img id="question-image" src="" alt="Question Image" />
+        </div>
+        <div class="right-pane">
+            <div id="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Modal for final score -->
+    <div id="score-modal" class="modal">
+        <div class="modal-content">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is: <span id="final-score"></span></p>
+            <button id="return-button">Okay</button>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentIndex = 0;
+        let score = 0;
+
+        // Fetch questions from the backend
+        async function fetchQuestions() {
+            const response = await axios.get('/get_questions/english');
+            questions = response.data;
+            displayQuestion();
+        }
+
+        // Display the current question
+        function displayQuestion() {
+            if (currentIndex >= questions.length) {
+                showFinalScore();
+                return;
+            }
+
+            const currentQuestion = questions[currentIndex];
+
+            document.getElementById('question-text').innerText = currentQuestion.question;
+            document.getElementById('question-image').src = `/static/${currentQuestion.image}`;
+
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = ''; // Clear previous options
+
+            currentQuestion.options.forEach(option => {
+                const button = document.createElement('button');
+                button.innerText = option;
+                button.onclick = () => checkAnswer(option);
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        // Check the selected answer
+        async function checkAnswer(selectedOption) {
+            const currentQuestion = questions[currentIndex];
+            const feedbackDiv = document.getElementById('feedback');
+            let feedbackText = '';
+
+            const buttons = document.querySelectorAll('#options button');
+            buttons.forEach(button => {
+                button.disabled = true;
+            });
+
+
+            if (selectedOption === currentQuestion.answer) {
+                feedbackText = currentQuestion.correct_feedback;
+                score += 1;
+            } else {
+                feedbackText = currentQuestion.incorrect_feedback;
+            }
+
+            feedbackDiv.innerText = feedbackText;
+            await axios.post('/speak', { text: feedbackText }); // Trigger TTS
+            currentIndex += 1;
+            setTimeout(displayQuestion, 2000); // Wait before moving to the next question
+        }
+
+        // Show final score
+        async function showFinalScore() {
+            document.getElementById('final-score').innerText = score;
+            document.getElementById('score-modal').style.display = 'flex';
+
+            await axios.post('/update_score/english', { score });
+        }
+
+        // Return to the leaderboard
+        document.getElementById('return-button').onclick = () => {
+            window.location.href = '/english';
+        };
+
+        // Initialize the quiz
+        fetchQuestions();
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+@socketio.on('addition')
+def addition():
+    try:
+        mp_hands = mp.solutions.hands
+        cap = cv2.VideoCapture(0)
+        global is_connected
+        is_connected = True
+        if not cap.isOpened():
+            text_to_speech("cap is not opened")
+            emit('video_feed', b'', broadcast=True)  # Notify client of failure
+            return
+
+        with mp_hands.Hands(
+                model_complexity=0,
+                min_detection_confidence=0.5,
+                min_tracking_confidence=0.5, ) as hands:
+
+            while cap.isOpened():
+                ret, image = cap.read()
+                if not ret:
+                    text_to_speech("no ret")
+                    break
+
+                if check_Thumb(image):
+                    cap.release()
+                    text_to_speech("Thumbs up detected! Redirecting.")
+                    emit('redirect', {"url": url_for('home')}, broadcast=True)
+                    break
+                if is_connected == False:
+                    break
+
+                image.flags.writeable = False
+                image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                results = hands.process(image)
+
+                image.flags.writeable = True
+                image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+
+                fingerCount1 = 0
+                fingerCount2 = 0
+
+                if results.multi_hand_landmarks:
+
+                    for hand_landmarks in results.multi_hand_landmarks:
+                        # Get hand index to check label (left or right)
+                        handIndex = results.multi_hand_landmarks.index(hand_landmarks)
+                        handLabel = results.multi_handedness[handIndex].classification[0].label
+
+                        # Set variable to keep landmarks positions (x and y)
+                        handLandmarks = []
+
+                        # Fill list with x and y positions of each landmark
+                        for landmarks in hand_landmarks.landmark:
+                            handLandmarks.append([landmarks.x, landmarks.y])
+
+                        if handLabel == "Left":
+                            if handLandmarks[4][0] > handLandmarks[3][0]:
+                                fingerCount1 += 1
+                            if handLandmarks[8][1] < handLandmarks[6][1]:  # Index finger
+                                fingerCount1 += 1
+                            if handLandmarks[12][1] < handLandmarks[10][1]:  # Middle finger
+                                fingerCount1 += 1
+                            if handLandmarks[16][1] < handLandmarks[14][1]:  # Ring finger
+                                fingerCount1 += 1
+                            if handLandmarks[20][1] < handLandmarks[18][1]:  # Pinky
+                                fingerCount1 += 1
+                            if handLandmarks[8][1] < handLandmarks[6][1] and handLandmarks[20][1] < handLandmarks[18][
+                                1] and handLandmarks[16][1] > handLandmarks[14][1] and handLandmarks[12][1] > \
+                                    handLandmarks[10][1]:
+                                f = True
+                        elif handLabel == "Right":
+                            if handLandmarks[4][0] < handLandmarks[3][0]:
+                                fingerCount2 += 1
+                            if handLandmarks[8][1] < handLandmarks[6][1]:  # Index finger
+                                fingerCount2 += 1
+                            if handLandmarks[12][1] < handLandmarks[10][1]:  # Middle finger
+                                fingerCount2 += 1
+                            if handLandmarks[16][1] < handLandmarks[14][1]:  # Ring finger
+                                fingerCount2 += 1
+                            if handLandmarks[20][1] < handLandmarks[18][1]:  # Pinky
+                                fingerCount2 += 1
+                            if handLandmarks[8][1] < handLandmarks[6][1] and handLandmarks[20][1] < handLandmarks[18][
+                                1] and handLandmarks[16][1] > handLandmarks[14][1] and handLandmarks[12][1] > handLandmarks[10][1]:
+                                f = True
+
+                    # Display finger count
+                    sum = fingerCount1 + fingerCount2
+                    disp = str(fingerCount1) + ' + ' + str(fingerCount2) + ' = ' + str(sum)
+                    cv2.putText(image, disp, (50, 450), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 10)
+                    _, buffer = cv2.imencode('.png', image)
+                    frame = buffer.tobytes()
+
+                    # Emit the frame to the client
+                    emit('video_feed', frame, broadcast=True, binary=True)
+                    socketio.sleep(0.003)
+
+    except Exception as e:
+        text_to_speech(f"Error occurred: {str(e)}")
+        emit('video_feed', b'', broadcast=True)
+    finally:
+        cv2.destroyAllWindows()

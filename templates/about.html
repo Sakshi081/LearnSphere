@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Pinyon+Script&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <style>
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            padding-top:80px;
+            font-family: 'Patrick Hand', cursive;;
+            color: #333;
+            background-color: #fff;
+
+        }
+
+        /* Navbar Styles */
+
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem 3rem 1rem;
+            background: linear-gradient(to bottom, #FFC107, #FFECB3);
+            color: #6A1B9A;
+        }
+
+
+
+        .welcome-heading {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: 'Chewy', cursive;
+
+        }
+
+
+
+
+        .about-us {
+            padding: 10px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            text-align: left;
+        }
+
+        .about-us .social-links {
+            display: flex;
+
+            gap: 1rem;
+
+        }
+        .about-us .about-us-content {
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            align-items: center;
+       }
+
+        .about-us .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .about-us .social-links a:hover {
+            color: #FFC107; /* Change color on hover */
+        }
+
+        .about-us .social-links i {
+            margin-right: 0.5rem;
+        }
+
+        .about-us .contact-info {
+            font-size: 1.1rem;
+        }
+
+        .about-us a {
+            color: #FFC107;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .section-container {
+            display: flex;
+            margin: 2rem 0;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+
+
+
+        .section-image {
+            flex: 1;
+            max-width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+
+        .section-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .section-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically centers the text */
+            align-items: center;     /* Horizontally centers the text */
+            flex: 1;
+            max-width: 40%;
+            box-sizing: border-box;
+            padding: 5px 1rem;
+            background-color: #6A1B9A;
+            color: white;
+            border-radius: 25px;
+            border: 4px solid #6A1B9A;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Patrick Hand', cursive;
+            text-align: center;
+
+        }
+
+        .section-text h2 {
+            font-size: 2.5rem;
+            font-family: 'Chewy', cursive;
+            margin-bottom: 1rem;
+        }
+
+        .section-text p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-image,
+            .section-text {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('about')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('index') }}" class="logout-button">Login/Signup</a>
+        </div>
+    </div>
+
+    <!-- Boxed Section for Welcome -->
+    <div class="section-container">
+        <div class="section-image">
+            <img src="{{ url_for('static', filename='bot1.png') }}" alt="Quiz Bot">
+        </div>
+        <div class="section-text">
+            <h1 class="welcome-heading" >Welcome to StudyBuddy!</h1>
+            <br>
+            <p  style="font-size:1.4rem;">Where play meets progress, powered by AI and AR!</p>
+            <br>
+            <p>At StudyBuddy, we believe that every child deserves an exciting, personalized, and interactive way to learn.
+                Designed
+                with love and powered by cutting-edge technology, Study Buddy transforms learning into an adventure filled
+                with exploration, discovery, and fun!</p>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="section-text">
+            <h2>What Is StudyBuddy?</h2>
+            <br>
+            <p >StudyBuddy is an innovative, AI-enhanced learning platform tailored specifically for pre-primary and early
+                learners. Our mission is to make education not just effective but also engaging for young minds. Through
+                interactive games, augmented reality experiences, and customized quizzes. StudyBuddy nurtures your child's
+                curiosity and helps them build strong foundations in language, mathematics, and general knowledge.</p>
+        </div>
+        <div class="section-image">
+            <img src="{{ url_for('static', filename='bot2.png') }}" alt="Quiz Bot">
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="section-image">
+            <img src="{{ url_for('static', filename='bot3.png') }}" alt="Quiz Bot">
+        </div>
+        <div class="section-text">
+            <h2>Our Purpose?</h2>
+            <p>The formative years of childhood are crucial for developing cognitive, linguistic, and social skills.
+                Traditional
+                learning methods often struggle to hold young children's attention. That’s where StudyBuddy steps in! Our
+                platform is crafted to:
+                <br>• Engage young learners through vibrant visuals and playful interactions.
+                <br>• Encourage creativity and critical thinking using immersive activities.
+                <br>• Provide a personalized learning journey that adapts to your child’s pace and preferences.
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us">
+        <h2>Follow us at:</h2>
+        <div class="about-us-content">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div class="contact-info">
+                Contact Us: <a href="mailto:studyBuddyorg@gmail.com">studybuddyorg@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 StudyBuddy. Terms and Conditions apply.</p>
+    </div>
+
+</body>
+
+</html>

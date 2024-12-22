@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylehome.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="{{ url_for('static', filename='img1.jpg') }}" alt="Image 1">
+            <img src="{{ url_for('static', filename='img2.jpg') }}" alt="Image 2">
+            <img src="{{ url_for('static', filename='img3.jpg') }}" alt="Image 3">
+            <img src="{{ url_for('static', filename='img4.jpg') }}" alt="Image 4">
+            <img src="{{ url_for('static', filename='img5.jpg') }}" alt="Image 5">
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            Welcome, {{ first_name }}!
+            <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>What would you like to do, today?</h1>
+        <div class="buttons">
+            <a href="{{ url_for('quiz') }}" class="button">
+                <i class="fas fa-question-circle"></i>
+                <span>Quiz</span>
+            </a>
+            <a href="{{ url_for('chat') }}" class="button">
+                <i class="fas fa-robot"></i>
+                <span>Talk to Kira</span>
+            </a>
+            <a href="{{ url_for('games') }}" class="button">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+            </a>
+            <a href="{{ url_for('activity') }}" class="button">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Activity</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

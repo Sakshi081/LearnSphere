@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Bot</title>
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+
+
+        /* Main Content Styles */
+        .container {
+           display: flex;
+            margin: 2rem 0;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            height: 90vh;
+        }
+
+
+
+        /* Image Section */
+        .image-section {
+            flex: 1;
+            max-width:50%;
+
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        /* Chatbox Section */
+
+        .chatbox-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: white;
+
+        }
+
+
+        #conversation {
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 300px;
+
+            overflow-y: auto;
+            background: white;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .bot {
+            color: #FFC107;
+        }
+
+        .user {
+            color: #6A1B9A;
+        }
+
+        /* Button Styling */
+       .start-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 13rem;
+                    max-width:30%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+
+            <div class="logo">
+
+                <a href="{{ url_for('home')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+
+            </div>
+
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="logout-button">Back to Home</a>
+        </div>
+    </div>
+
+
+     <!-- Main Content -->
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="{{ url_for('static', filename='botchat.png') }}" alt="Image 1">
+        </div>
+
+        <!-- Chatbox Section -->
+
+        <div class="chatbox-section">
+            <h1 style="color:#6A1B9A;  margin-top: 3rem;  margin-bottom: 1rem;   margin-left: 12rem;">Chat with Bot</h1>
+            <div id="conversation"></div>
+            <button id="start-conversation" class="start-button">Start Conversation</button>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+
+        // Listen for bot responses and update the conversation
+        socket.on("bot_response", (data) => {
+            const conversation = document.getElementById("conversation");
+            const message = document.createElement("div");
+            message.className = "message";
+            message.textContent = data.text;
+            conversation.appendChild(message);
+            conversation.scrollTop = conversation.scrollHeight; // Scroll to the bottom
+        });
+
+        // Handle redirect requests
+        socket.on("redirect", (data) => {
+            window.location.href = data.url;
+        });
+
+        // Start conversation on button click
+        document.getElementById("start-conversation").addEventListener("click", () => {
+            socket.emit("start_conversation");
+        });
+
+        // Go back to home page
+        document.getElementById("go-home").addEventListener("click", () => {
+            window.location.href = "{{ url_for('home') }}";
+        });
+    </script>
+</body>
+</html>

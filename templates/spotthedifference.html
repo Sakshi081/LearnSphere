@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Difference</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+        margin-top:5rem;
+        margin-bottom:1rem;
+        color: #6A1B9A;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+
+        }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 10px;
+        }
+        .image-wrapper {
+            position: relative;
+            display:inline-block;
+        }
+        img {
+            max-width: 400px;
+            height: auto;
+            cursor: crosshair;
+            display: block;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Prevent canvas from blocking clicks */
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+        }
+        .startbutton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #6A1B9A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px auto;
+            display: block;
+        }
+        .startbutton:hover {
+            background-color: #7b1fa2;
+        }
+        .text
+        {
+        font-size: 24px;
+        color:#6A1B9A;
+        margin-bottom: 10px;
+        gap:20px;
+        justify-content:center;
+        margin-top:3.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('about')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('games') }}" class="logout-button">Go to Games</a>
+        </div>
+    </div>
+    <h1 id="gametitle">Spot the Difference</h1>
+    <div id="timerscore" style="display: none; margin-top:5rem;" class="text">
+    <div id="timer" >Time left: 60</div>
+    <div id="score">Score: 0</div>
+    </div>
+
+    <div class="container" style="display: none;">
+        <div class="image-wrapper" style="position: relative;">
+            <img id="image1" src="" alt="Image 1">
+            <canvas id="canvas1" style="position: absolute; top: 0; left: 0;"></canvas>
+        </div>
+        <div class="image-wrapper" style="position: relative;">
+            <img id="image2" src="" alt="Image 2">
+            <canvas id="canvas2" style="position: absolute; top: 0; left: 0;"></canvas>
+        </div>
+    </div>
+
+    <button id="startButton" class="startbutton">Start Game</button>
+    <button id="restartButton" style="display: none;" class="startbutton">Restart Game</button>
+
+    <!-- Modal -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        const timerElement = document.getElementById('timer');
+        const scoreElement = document.getElementById('score');
+        const modal = document.getElementById('resultModal');
+        const modalMessage = document.getElementById('modalMessage');
+        const image1 = document.getElementById('image1');
+        const image2 = document.getElementById('image2');
+        const startButton = document.getElementById('startButton');
+        const restartButton = document.getElementById('restartButton');
+        const container = document.querySelector('.container');
+        const timerscoreElement = document.getElementById('timerscore');
+        const gameTitle = document.getElementById('gametitle');
+
+
+        let timer = 60;
+        let score = 0;
+        let differences = [];
+        const canvas1 = document.getElementById('canvas1');
+        const canvas2 = document.getElementById('canvas2');
+        const ctx2 = canvas2.getContext('2d');
+
+        function resizeCanvas() {
+            // Match canvas size to the image dimensions
+            canvas1.width = image1.offsetWidth;
+            canvas1.height = image1.offsetHeight;
+            canvas2.width = image2.offsetWidth;
+            canvas2.height = image2.offsetHeight;
+        }
+
+        // Call this after the images are loaded
+        image1.onload = image2.onload = resizeCanvas;
+
+        function getScaledCoordinates(event, image) {
+            const rect = image.getBoundingClientRect();
+            const scaleX = image.naturalWidth / image.offsetWidth;
+            const scaleY = image.naturalHeight / image.offsetHeight;
+
+            const x = (event.clientX - rect.left) * scaleX;
+            const y = (event.clientY - rect.top) * scaleY;
+
+            return { x, y };
+        }
+
+        function drawCircle(canvas, x, y, radius) {
+            const ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+
+        function checkDifference(x, y) {
+            for (let i = 0; i < differences.length; i++) {
+                const diff = differences[i];
+                const distance = Math.sqrt(
+                    Math.pow(diff.x - x, 2) + Math.pow(diff.y - y, 2)
+                );
+                if (distance <= diff.radius) {
+                    score++;
+                    scoreElement.textContent = `Score: ${score}`;
+                    drawCircle(canvas2, diff.x, diff.y, diff.radius); // Draw circle on the second canvas
+                    differences.splice(i, 1); // Remove the found difference
+                    return;
+                }
+            }
+        }
+
+        function loadGameData() {
+            fetch('/spot-the-difference-data')
+                .then(response => response.json())
+                .then(data => {
+                    // Set image sources dynamically
+                    image1.src = data.image1;
+                    image2.src = data.image2;
+
+                    // Load differences
+                    differences = data.differences;
+                });
+        }
+        restartButton.addEventListener('click', () =>
+        {
+            location.reload();
+        });
+
+        function startTimer() {
+            timerscoreElement.style.display = 'flex';
+            container.style.display = 'flex';
+            gameTitle.style.display = 'none';
+            startButton.style.display = 'none';
+            restartButton.style.display = 'block';
+            const interval = setInterval(() => {
+                timer--;
+                timerElement.textContent = `Time left: ${timer}`;
+                if (timer <= 0) {
+                    clearInterval(interval);
+                    endGame();
+                }
+            }, 1000);
+        }
+
+
+
+        function endGame() {
+            modal.style.display = 'block';
+            modalMessage.textContent = `You found ${score} differences!`;
+        }
+
+        // Attach click event to the second image
+        image2.addEventListener('click', (event) => {
+            const rect = event.target.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            checkDifference(x, y);
+        });
+
+        // Add event listener for the start button
+        startButton.addEventListener('click', () => {
+            loadGameData();
+            startTimer();
+        });
+    </script>
+</body>
+
+</html>

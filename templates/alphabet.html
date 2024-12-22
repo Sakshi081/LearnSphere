@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Overlay</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        #videoFeed {
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+        }
+        #container {
+            margin: 0px auto;
+            width: 500px;
+            height: 375px;
+            border:10px #333 solid;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #6A1B9A;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+             color: #FFC107;
+             display: flex;
+             align-items: center;
+
+            }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 2rem;
+            background-color: #6A1B9A;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .nav-left .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            position: relative;
+            left:-50px;
+            align-items: center;
+        }
+        .logout-button {
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    color: #6A1B9A;
+                    background-color: #FFC107;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 0 10px;
+        }
+
+        .logout-button:hover {
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="{{ url_for('about')}}"  class="logo" style="text-decoration:none;">
+                    <img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px" alt="Image 1">
+                    <span style="margin-left: 10px;">StudyBuddy</span>
+                </a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="logout-button">Go to home</a>
+        </div>
+    </div>
+    <div>
+        <h1>Alphabet Overlay</h1>
+    </div>
+    <div id="container">
+        <img id="videoFeed" alt="Video Feed" />
+    </div>
+
+    <script>
+        const socket = io.connect();
+        const imgElement = document.getElementById('videoFeed');
+        // Listen for video feed frames
+        socket.on('video_feed', (frame) => {
+            console.log('Frame received:', frame.byteLength);
+            if (frame.byteLength > 0) {
+                const blob = new Blob([frame], { type: 'image/jpeg' });
+                const imageUrl = URL.createObjectURL(blob);
+                imgElement.src = imageUrl; // Update image element's source
+            }
+        });
+
+        // Start the camera feed by emitting the selected letter
+        socket.emit('start_camera_feed', { letter: "{{ letter }}" });
+
+        socket.on('redirect', (data) => {
+            window.location.href = data.url;
+        });
+
+    </script>
+</body>
+</html>

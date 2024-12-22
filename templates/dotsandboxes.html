@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots and Boxes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        #scoreboard {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .score {
+            font-size: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dots and Boxes</h1>
+    <div id="mode-selection">
+        <button id="playFriend">Play with a Friend</button>
+        <button id="playBot">Play with Bot</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div id="scoreboard">
+            <div class="score">Player 1 (Purple): <span id="scoreP1">0</span></div>
+            <div class="score">Player 2 (Yellow): <span id="scoreP2">0</span></div>
+        </div>
+        <canvas id="dotsCanvas"></canvas>
+    </div>
+    <script>
+        const socket = io();
+        const canvas = document.getElementById("dotsCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const DOT_RADIUS = 5;
+        const GRID_SIZE = 5; // Number of dots per row/column
+        const SPACING = 100; // Spacing between dots
+        const LINE_WIDTH = 5;
+        const COLORS = { p1: "purple", p2: "yellow" };
+        const BOX_COLORS = { p1: "rgba(128, 0, 128, 0.5)", p2: "rgba(255, 255, 0, 0.5)" };
+
+        let mode = null;
+        let turn = "p1"; // Player 1 starts
+        let score = { p1: 0, p2: 0 };
+        let lines = [];
+        let boxes = [];
+        let isBotMode = false;
+
+        function initializeGrid() {
+            const width = (GRID_SIZE - 1) * SPACING;
+            canvas.width = canvas.height = width + SPACING;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw dots
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    ctx.beginPath();
+                    ctx.arc(x * SPACING, y * SPACING, DOT_RADIUS, 0, Math.PI * 2);
+                    ctx.fillStyle = "black";
+                    ctx.fill();
+                }
+            }
+        }
+
+        function drawLine(start, end, color) {
+            ctx.beginPath();
+            ctx.moveTo(...start);
+            ctx.lineTo(...end);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = LINE_WIDTH;
+            ctx.stroke();
+        }
+
+        function fillBox(x, y, color) {
+            ctx.fillStyle = color;
+            ctx.fillRect(x * SPACING + LINE_WIDTH, y * SPACING + LINE_WIDTH, SPACING - LINE_WIDTH * 2, SPACING - LINE_WIDTH * 2);
+        }
+
+        function checkAndFillBoxes(start, end) {
+            let completedBoxes = 0;
+            const [sx, sy] = start.map(coord => Math.round(coord / SPACING));
+            const [ex, ey] = end.map(coord => Math.round(coord / SPACING));
+
+            const possibleBoxes = [];
+            if (sx === ex) { // Vertical line
+                if (sx > 0) possibleBoxes.push([sx - 1, sy]); // Box to the left
+                if (sx < GRID_SIZE - 1) possibleBoxes.push([sx, sy]); // Box to the right
+            } else if (sy === ey) { // Horizontal line
+                if (sy > 0) possibleBoxes.push([sx, sy - 1]); // Box above
+                if (sy < GRID_SIZE - 1) possibleBoxes.push([sx, sy]); // Box below
+            }
+
+            for (const [bx, by] of possibleBoxes) {
+                if (
+                    boxes.find(box => box.x === bx && box.y === by) ||
+                    !lines.find(line => line.start.join() === `${bx},${by}` && line.end.join() === `${bx + 1},${by}`) ||
+                    !lines.find(line => line.start.join() === `${bx + 1},${by}` && line.end.join() === `${bx + 1},${by + 1}`) ||
+                    !lines.find(line => line.start.join() === `${bx + 1},${by + 1}` && line.end.join() === `${bx},${by + 1}`) ||
+                    !lines.find(line => line.start.join() === `${bx},${by + 1}` && line.end.join() === `${bx},${by}`)
+                ) continue;
+
+                boxes.push({ x: bx, y: by, owner: turn });
+                fillBox(bx, by, BOX_COLORS[turn]);
+                completedBoxes++;
+            }
+
+            return completedBoxes;
+        }
+
+        function handleClick(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            const nearestDot = ([coord]) => Math.round(coord / SPACING) * SPACING;
+            const start = [nearestDot(x), nearestDot(y)];
+            const end = [...start];
+
+            if (Math.abs(x - start[0]) > SPACING / 2 || Math.abs(y - start[1]) > SPACING / 2) return;
+
+            const isVertical = Math.abs(x - start[0]) < Math.abs(y - start[1]);
+            end[isVertical ? 1 : 0] += SPACING;
+
+            if (lines.find(line => line.start.join() === start.join() && line.end.join() === end.join())) return;
+
+            drawLine(start, end, COLORS[turn]);
+            lines.push({ start, end, owner: turn });
+
+            const completedBoxes = checkAndFillBoxes(start, end);
+            score[turn] += completedBoxes;
+
+            if (!completedBoxes) turn = turn === "p1" ? "p2" : "p1";
+
+            document.getElementById("scoreP1").textContent = score.p1;
+            document.getElementById("scoreP2").textContent = score.p2;
+
+            if (isBotMode && turn === "p2") setTimeout(botMove, 1000);
+        }
+
+        function botMove() {
+            // Simple bot logic to find the first available line
+            for (let x = 0; x < GRID_SIZE; x++) {
+                for (let y = 0; y < GRID_SIZE; y++) {
+                    const start = [x * SPACING, y * SPACING];
+                    const end = [...start];
+                    if (!lines.find(line => line.start.join() === start.join() && line.end.join() === end.join())) {
+                        drawLine(start, end, COLORS.p2);
+                        lines.push({ start, end, owner: "p2" });
+                        turn = "p1";
+                        return;
+                    }
+                }
+            }
+        }
+
+        document.getElementById("playFriend").addEventListener("click", () => {
+            mode = "friend";
+            document.getElementById("mode-selection").style.display = "none";
+            document.getElementById("game-container").style.display = "block";
+            initializeGrid();
+            canvas.addEventListener("click", handleClick);
+        });
+
+        document.getElementById("playBot").addEventListener("click", () => {
+            mode = "bot";
+            isBotMode = true;
+            document.getElementById("mode-selection").style.display = "none";
+            document.getElementById("game-container").style.display = "block";
+            initializeGrid();
+            canvas.addEventListener("click", handleClick);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2242 @@
+{
+    "english":
+    [
+        {
+            "question": "What is the plural of 'child'?",
+            "options": ["Childs", "Children", "Childes", "Childies"],
+            "answer": "Children",
+            "correct_feedback": "Correct! The plural of 'child' is 'children'.",
+            "incorrect_feedback": "Oops! The correct answer is 'children'.",
+            "image": "images/children.jpg"
+        },
+        {
+          "question": "What is the first letter of the alphabet?",
+          "options": ["B", "C", "A", "D"],
+          "answer": "A",
+          "correct_feedback": "Yay! Your answer is correct. The first letter of the alphabet is A indeed.",
+          "incorrect_feedback": "Oops! Your answer is Incorrect. The correct answer is 'A' as the first letter of the alphabet is the letter A.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What is the last letter of the alphabet?",
+          "options": ["X", "Z", "Y", "L"],
+          "answer": "Z",
+          "correct_feedback": "Yay! Your answer is correct. The last letter of the alphabet is Z indeed.",
+          "incorrect_feedback": "Oops! Your answer is Incorrect. The correct answer is Z as the last letter of the alphabet is the letter Z.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes after B?",
+          "options": ["A", "D", "C", "E"],
+          "answer": "C",
+          "correct_feedback": "Yay! Your answer is correct. The letter that comes after B is C indeed.",
+          "incorrect_feedback": "Oops! Your answer is Incorrect. The correct answer is 'C' as the letter that comes after B is letter C.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes before D?",
+          "options": ["A", "D", "C", "E"],
+          "answer": "C",
+          "correct_feedback": "Yay! Your answer is correct. The letter that comes before D is C indeed.",
+          "incorrect_feedback": "Oops! Your answer is Incorrect. The correct answer is 'C' as the letter that comes before D is letter C.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "How many letters are there in the English alphabet?",
+          "options": ["24", "25", "27", "26"],
+          "answer": "26",
+          "correct_feedback": "Yay! Your answer is correct. There are 26 letters in the English alphabet.",
+          "incorrect_feedback": "Oops! Your answer is Incorrect. The correct answer is 26 as there are 26 letters in the English alphabet.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes after A?",
+          "options": ["C", "B", "D", "E"],
+          "answer": "B",
+          "correct_feedback": "Yay! Your answer is correct. The letter that comes after A is B.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' as B comes after A.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes before B?",
+          "options": ["A", "C", "D", "E"],
+          "answer": "A",
+          "correct_feedback": "Yay! Your answer is correct. The letter that comes before B is A.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'A' because A comes before B.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What is the second letter of the alphabet?",
+          "options": ["A", "B", "C", "D"],
+          "answer": "B",
+          "correct_feedback": "Yay! Your answer is correct. The second letter of the alphabet is B.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because B is the second letter of the alphabet.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes after Z?",
+          "options": ["A", "Z", "Y", "Nothing"],
+          "answer": "Nothing",
+          "correct_feedback": "Yay! Your answer is correct. After Z, there is no letter in the English alphabet.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is nothing because there is nothing after Z!",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "Which letter starts the word Apple?",
+          "options": ["A", "P", "L", "E"],
+          "answer": "A",
+          "correct_feedback": "Yay! Your answer is correct. The word Apple starts with the letter A.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'A' as Apple starts with A.",
+          "image": "images/apple.jpg"
+        },
+        {
+          "question": "Which letter starts the word Ball?",
+          "options": ["A", "B", "C", "D"],
+          "answer": "B",
+          "correct_feedback": "Yay! Your answer is correct. The word Ball starts with the letter B.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because Ball starts with B.",
+          "image": "images/ball.jpeg"
+        },
+        {
+          "question": "Which letter starts the word Cat?",
+          "options": ["T", "A", "C", "K"],
+          "answer": "C",
+          "correct_feedback": "Yay! Your answer is correct. The word Cat starts with the letter C.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'C' as Cat starts with C.",
+          "image": "images/cat.jpeg"
+        },
+        {
+          "question": "What is the shape of the letter O?",
+          "options": ["Circle", "Square", "Triangle", "Line"],
+          "answer": "Circle",
+          "correct_feedback": "Yay! Your answer is correct. The letter O is shaped like a circle.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The letter O looks like a circle. So the correct answer is circle",
+          "image": "images/circle.png"
+        },
+        {
+          "question": "Which letter starts the word Dog?",
+          "options": ["C", "D", "E", "F"],
+          "answer": "D",
+          "correct_feedback": "Yay! Your answer is correct. The word Dog starts with the letter D.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'D' as Dog starts with D.",
+          "image": "images/dog.jpeg"
+        },
+        {
+          "question": "What letter comes at the end of the word Sun?",
+          "options": ["S", "U", "N", "E"],
+          "answer": "N",
+          "correct_feedback": "Yay! Your answer is correct. The word Sun ends with the letter N.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'N' as the word Sun ends with N.",
+          "image": "images/sun.jpg"
+        },
+        {
+          "question": "What is the first letter in the word Banana?",
+          "options": ["B", "A", "N", "C"],
+          "answer": "B",
+          "correct_feedback": "Yay! Your answer is correct. The word Banana starts with the letter B.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because the word Banana starts with B.",
+          "image": "images/banana.jpg"
+        },
+        {
+          "question": "How many letters are in the word Tree?",
+          "options": ["3", "4", "5", "6"],
+          "answer": "4",
+          "correct_feedback": "Yay! Your answer is correct. The word Tree has 4 letters.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 4 because the word Tree has 4 letters.",
+          "image": "images/tree.png"
+        },
+        {
+          "question": "What letter comes after H in the alphabet?",
+          "options": ["I", "J", "K", "G"],
+          "answer": "I",
+          "correct_feedback": "Yay! Your answer is correct. The letter I comes after H in the alphabet.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'I' because I comes after H.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "What letter comes at the end of the word Frog?",
+          "options": ["R", "F", "G", "O"],
+          "answer": "G",
+          "correct_feedback": "Yay! Your answer is correct. The word Frog ends with the letter G.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'G' because the word Frog ends with G.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "Which word starts with the letter P?",
+          "options": ["Apple", "Mango", "Pineapple", "Tiger"],
+          "answer": "Pineapple",
+          "correct_feedback": "Yay! Your answer is correct. The word Pineapple starts with the letter P.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3 because Pineapple starts with P.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "Which letter comes before K in the alphabet?",
+          "options": ["I", "J", "L", "H"],
+          "answer": "J",
+          "correct_feedback": "Yay! Your answer is correct. The letter J comes before K in the alphabet.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'K' as J comes before K.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "How many letters are there in the word House?",
+          "options": ["6", "4", "5", "3"],
+          "answer": "5",
+          "correct_feedback": "Yay! Your answer is correct. The word House has 5 letters.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is '5' because House has 5 letters.",
+          "image": "images/house.jpg"
+        },
+        {
+          "question": "Which letter comes after N in the alphabet?",
+          "options": ["L", "M", "O", "P"],
+          "answer": "O",
+          "correct_feedback": "Yay! Your answer is correct. The letter O comes after N in the alphabet.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'O' because O comes after N.",
+          "image": "images/quizimage.png"
+        },
+        {
+          "question": "How many vowels are there in the word Elephant?",
+          "options": ["2", "4", "3", "5"],
+          "answer": "3",
+          "correct_feedback": "Yay! Your answer is correct. The word Elephant has 3 vowels: E, E, and A.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 3 because Elephant has 3 vowels.",
+          "image": "images/englishquiz.png"
+        },
+        {
+          "question": "Which of these words starts with the letter B?",
+          "options": ["Ball", "Cat", "Dog", "Frog"],
+          "answer": "Ball",
+          "correct_feedback": "Yay! Your answer is correct. The word Ball starts with the letter B.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because Ball starts with B.",
+          "image": "images/ball.jpeg"
+        },
+        {
+          "question": "Which letter comes between G and I in the alphabet?",
+          "options": ["F", "H", "J", "K"],
+          "answer": "H",
+          "correct_feedback": "Yay! Your answer is correct. The letter H comes between G and I in the alphabet.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'H' because H comes between G and I.",
+          "image": "images/englishquiz.png"
+        },
+        {
+          "question": "What is the color of grass?",
+          "options": [
+            "Blue",
+            "Green",
+            "Yellow",
+            "Red"
+          ],
+          "answer": "Green",
+          "correct_feedback": "Yay! Your answer is correct. Grass is green.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is green.",
+          "image": "images/grass.jpg"
+        },
+
+        {
+          "question": "Which word starts with the letter M?",
+          "options": ["Flower", "Monkey", "Zebra", "Fish"],
+          "answer": "Monkey",
+          "correct_feedback": "Yay! Your answer is correct. The word Monkey starts with the letter M.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is M.",
+          "image": "images/monkey.jpg"
+        },
+        {
+          "question": "How many letters are there in the word Family?",
+          "options": ["4", "5", "6", "7"],
+          "answer": "6",
+          "correct_feedback": "Yay! Your answer is correct. The word Family has 6 letters.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3 because Family has 6 letters.",
+          "image": "images/family.jpg"
+        },
+        {
+          "question": "Which color is the sky on a sunny day?",
+          "options": ["Blue", "Red", "Green", "Yellow"],
+          "answer": "Blue",
+          "correct_feedback": "Yay! Your answer is correct. The sky is usually blue on a sunny day.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The sky is blue on a sunny day.",
+          "image": "images/sky.jpeg"
+        },
+        {
+          "question": "What is the opposite of Hot?",
+          "options": ["Wet", "Cold", "Fast", "Tall"],
+          "answer": "Cold",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Hot is Cold.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. Cold is the opposite of Hot.",
+          "image": "images/hot cold.jpg"
+        },
+        {
+          "question": "Which color is the sun?",
+          "options": ["Green", "Yellow", "Blue", "Orange"],
+          "answer": "Yellow",
+          "correct_feedback": "Yay! Your answer is correct. The sun is yellow.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The sun is yellow.",
+          "image": "images/sun.jpg"
+        },
+        {
+          "question": "What is the opposite of Up?",
+          "options": ["Down", "Left", "Right", "Near"],
+          "answer": "Down",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Up is Down.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. Down is the opposite of Up.",
+          "image": "images/englishquiz.png"
+        },
+        {
+          "question": "Which of these is a fruit?",
+          "options": ["Carrot", "Apple", "Potato", "Onion"],
+          "answer": "Apple",
+          "correct_feedback": "Yay! Your answer is correct. Apple is a fruit.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is apple because Apple is a fruit.",
+          "image": "images/apple.jpg"
+        },
+        {
+          "question": "Which of these animals can fly?",
+          "options": ["Elephant", "Dog", "Bird", "Fish"],
+          "answer": "Bird",
+          "correct_feedback": "Yay! Your answer is correct. A bird can fly.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is bird because a bird can fly.",
+          "image": "images/bird.jpg"
+        },
+        {
+          "question": "Which animal has a trunk?",
+          "options": ["Cow", "Elephant", "Dog", "Giraffe"],
+          "answer": "Elephant",
+          "correct_feedback": "Yay! Your answer is correct. An elephant has a trunk.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is elephant because an elephant has a trunk.",
+          "image": "images/elephant.jpeg"
+        },
+        {
+          "question": "Which color is an apple?",
+          "options": ["Red", "Blue", "Green", "Yellow"],
+          "answer": "Red",
+          "correct_feedback": "Yay! Your answer is correct. An apple is usually red.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1 because an apple is red.",
+          "image": "images/apple.jpg"
+        },
+        {
+          "question": "What is the opposite of Fast?",
+          "options": ["Slow", "Quick", "Tall", "Heavy"],
+          "answer": "Slow",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Fast is Slow.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. Slow is the opposite of Fast.",
+          "image": "images/englishquiz.png"
+        },
+
+
+            {
+                "question": "Which letter starts the word Tree?",
+                "options": ["T", "R", "E", "A"],
+                "answer": "T",
+                "correct_feedback": "Yay! Your answer is correct. The word Tree starts with the letter T.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'T' because Tree starts with T.",
+                "image": "images/tree.png"
+            },
+            {
+                "question": "What is the opposite of Big?",
+                "options": ["Large", "Small", "Tall", "Wide"],
+                "answer": "Small",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Big is Small.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Small' because it is the opposite of Big.",
+                "image": "images/englishquiz.png"
+            },
+
+            {
+                "question": "What is the opposite of Clean?",
+                "options": ["Dirty", "Neat", "Tidy", "Clear"],
+                "answer": "Dirty",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Clean is Dirty.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Dirty' because it is the opposite of Clean.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which letter comes after P in the alphabet?",
+                "options": ["Q", "R", "O", "M"],
+                "answer": "Q",
+                "correct_feedback": "Yay! Your answer is correct. The letter Q comes after P in the alphabet.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Q' because Q comes after P.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which color is a banana?",
+                "options": ["Green", "Yellow", "Red", "Blue"],
+                "answer": "Yellow",
+                "correct_feedback": "Yay! Your answer is correct. A banana is yellow.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Yellow' because bananas are yellow.",
+                "image": "images/banana.jpg"
+            },
+            {
+                "question": "Which letter starts the word Fish?",
+                "options": ["F", "A", "S", "H"],
+                "answer": "F",
+                "correct_feedback": "Yay! Your answer is correct. The word Fish starts with the letter F.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'F' because Fish starts with F.",
+                "image": "images/fish.jpg"
+            },
+            {
+                "question": "What is the opposite of Full?",
+                "options": ["Empty", "Big", "Small", "Open"],
+                "answer": "Empty",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Full is Empty.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Empty' because it is the opposite of Full.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "What letter comes after G?",
+                "options": ["H", "I", "J", "K"],
+                "answer": "H",
+                "correct_feedback": "Yay! Your answer is correct. The letter H comes after G.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'H' because H comes after G.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "What is the opposite of Happy?",
+                "options": ["Sad", "Angry", "Excited", "Glad"],
+                "answer": "Sad",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Happy is Sad.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Sad' because it is the opposite of Happy.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which of these is a vegetable?",
+                "options": ["Apple", "Carrot", "Banana", "Grapes"],
+                "answer": "Carrot",
+                "correct_feedback": "Yay! Your answer is correct. A carrot is a vegetable.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Carrot' because it is a vegetable.",
+                "image": "images/carrot.jpeg"
+            },
+            {
+                "question": "What is the color of a ripe tomato?",
+                "options": ["Green", "Red", "Yellow", "Orange"],
+                "answer": "Red",
+                "correct_feedback": "Yay! Your answer is correct. A ripe tomato is red.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Red' because ripe tomatoes are red.",
+                "image": "images/tomato.jpg"
+            },
+            {
+                "question": "Which letter comes before F?",
+                "options": ["E", "D", "G", "H"],
+                "answer": "E",
+                "correct_feedback": "Yay! Your answer is correct. The letter E comes before F.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'E' because E comes before F.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which animal has stripes?",
+                "options": ["Lion", "Zebra", "Elephant", "Dog"],
+                "answer": "Zebra",
+                "correct_feedback": "Yay! Your answer is correct. A zebra has stripes.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Zebra' because zebras have stripes.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "How many legs does a spider have?",
+                "options": ["6", "8", "4", "10"],
+                "answer": "8",
+                "correct_feedback": "Yay! Your answer is correct. A spider has 8 legs.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is '8' because spiders have 8 legs.",
+                "image": "images/spider.jpeg"
+            },
+            {
+                "question": "Which letter comes between B and D?",
+                "options": ["A", "C", "E", "F"],
+                "answer": "C",
+                "correct_feedback": "Yay! Your answer is correct. The letter C comes between B and D.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'C' because it comes between B and D.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which of these animals lives in water?",
+                "options": ["Elephant", "Dog", "Fish", "Cat"],
+                "answer": "Fish",
+                "correct_feedback": "Yay! Your answer is correct. A fish lives in water.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Fish' because fish live in water.",
+                "image": "images/fish.jpg"
+            },
+            {
+                "question": "Which letter starts the word Queen?",
+                "options": ["Q", "R", "P", "S"],
+                "answer": "Q",
+                "correct_feedback": "Yay! Your answer is correct. The word Queen starts with the letter Q.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Q' because Queen starts with Q.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "Which is the color of the sky on a clear day?",
+                "options": ["Blue", "Green", "Yellow", "White"],
+                "answer": "Blue",
+                "correct_feedback": "Yay! Your answer is correct. The sky is blue on a clear day.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Blue' because the sky is blue.",
+                "image": "images/sky.jpeg"
+            },
+            {
+                "question": "Which letter starts the word Elephant?",
+                "options": ["E", "L", "A", "T"],
+                "answer": "E",
+                "correct_feedback": "Yay! Your answer is correct. The word Elephant starts with the letter E.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'E' because Elephant starts with E.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "What color is an apple?",
+                "options": ["Red", "Blue", "Yellow", "Green"],
+                "answer": "Red",
+                "correct_feedback": "Yay! Your answer is correct. Apples are often red.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Red' because apples are red.",
+                "image": "images/apple.jpg"
+            },
+            {
+                "question": "What is the opposite of Hot?",
+                "options": ["Cold", "Warm", "Wet", "Dry"],
+                "answer": "Cold",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Hot is Cold.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Cold' because Cold is the opposite of Hot.",
+                "image": "images/hot cold.jpg"
+            },
+            {
+                "question": "Which of these is a fruit?",
+                "options": ["Potato", "Mango", "Carrot", "Onion"],
+                "answer": "Mango",
+                "correct_feedback": "Yay! Your answer is correct. Mango is a fruit.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Mango' because Mango is a fruit.",
+                "image": "images/mango.jpg"
+            },
+            {
+                "question": "Which letter comes before C?",
+                "options": ["A", "B", "D", "E"],
+                "answer": "B",
+                "correct_feedback": "Yay! Your answer is correct. The letter that comes before C is B.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because B comes before C.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "What is the opposite of Tall?",
+                "options": ["Short", "Small", "Wide", "Thin"],
+                "answer": "Short",
+                "correct_feedback": "Yay! Your answer is correct. The opposite of Tall is Short.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Short' because it is the opposite of Tall.",
+                "image": "images/englishquiz.png"
+            },
+            {
+                "question": "How many vowels are in the word 'Ocean'?",
+                "options": ["2", "3", "4", "5"],
+                "answer": "3",
+                "correct_feedback": "Yay! Your answer is correct. The word 'Ocean' has 3 vowels: O, E, and A.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is '3' because Ocean has 3 vowels.",
+                "image": "images/ocean.jpg"
+            },
+            {
+                "question": "Which word starts with the letter R?",
+                "options": ["Rabbit", "Apple", "Mango", "Fish"],
+                "answer": "Rabbit",
+                "correct_feedback": "Yay! Your answer is correct. The word Rabbit starts with the letter R.",
+                "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Rabbit' because Rabbit starts with R.",
+                "image": "images/rabbit.jpeg"
+            },
+            {
+              "question": "What is the opposite of Thin?",
+              "options": ["Fat", "Wide", "Big", "Thick"],
+              "answer": "Thick",
+              "correct_feedback": "Yay! Your answer is correct. The opposite of Thin is Thick.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Thick' because it is the opposite of Thin.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "What letter comes between F and H?",
+              "options": ["G", "I", "J", "E"],
+              "answer": "G",
+              "correct_feedback": "Yay! Your answer is correct. The letter that comes between F and H is G.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'G' because it comes between F and H.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "What is the opposite of High?",
+              "options": ["Low", "Short", "Tall", "Big"],
+              "answer": "Low",
+              "correct_feedback": "Yay! Your answer is correct. The opposite of High is Low.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Low' because it is the opposite of High.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "Which letter comes at the end of the word 'Chair'?",
+              "options": ["R", "I", "H", "C"],
+              "answer": "R",
+              "correct_feedback": "Yay! Your answer is correct. The word Chair ends with the letter R.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'R' because Chair ends with R.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "Which letter comes after J in the alphabet?",
+              "options": ["I", "K", "L", "M"],
+              "answer": "K",
+              "correct_feedback": "Yay! Your answer is correct. The letter K comes after J in the alphabet.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'K' because K comes after J.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "Which word starts with the letter S?",
+              "options": ["Chair", "Sun", "Dog", "Fish"],
+              "answer": "Sun",
+              "correct_feedback": "Yay! Your answer is correct. The word Sun starts with the letter S.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Sun' because Sun starts with S.",
+              "image": "images/sun.jpg"
+          },
+          {
+              "question": "How many legs does a butterfly have?",
+              "options": ["4", "6", "8", "2"],
+              "answer": "6",
+              "correct_feedback": "Yay! Your answer is correct. A butterfly has 6 legs.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is '6' because butterflies have 6 legs.",
+              "image": "images/butterfly.jpeg"
+          },
+          {
+              "question": "What is the last letter in the word Duck?",
+              "options": ["C", "D", "K", "U"],
+              "answer": "K",
+              "correct_feedback": "Yay! Your answer is correct. The word Duck ends with the letter K.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'K' because Duck ends with K.",
+              "image": "images/K.png"
+          },
+          {
+              "question": "What is the opposite of Start?",
+              "options": ["Stop", "Finish", "End", "Halt"],
+              "answer": "Stop",
+              "correct_feedback": "Yay! Your answer is correct. The opposite of Start is Stop.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Stop' because it is the opposite of Start.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "Which animal is called the Ship of the Desert?",
+              "options": ["Camel", "Horse", "Elephant", "Lion"],
+              "answer": "Camel",
+              "correct_feedback": "Yay! Your answer is correct. The camel is called the Ship of the Desert.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Camel' because it is called the Ship of the Desert.",
+              "image": "images/camel.jpg"
+          },
+          {
+              "question": "What is the opposite of Dry?",
+              "options": ["Wet", "Cold", "Hot", "Soft"],
+              "answer": "Wet",
+              "correct_feedback": "Yay! Your answer is correct. The opposite of Dry is Wet.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Wet' because it is the opposite of Dry.",
+              "image": "images/englishquiz.png"
+          },
+          {
+              "question": "Which letter starts the word Monkey?",
+              "options": ["M", "A", "N", "K"],
+              "answer": "M",
+              "correct_feedback": "Yay! Your answer is correct. The word Monkey starts with the letter M.",
+              "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'M' because Monkey starts with M.",
+              "image": "images/monkey.jpg"
+          },
+          {
+            "question": "Which letter starts the word Kite?",
+            "options": ["K", "T", "E", "I"],
+            "answer": "K",
+            "correct_feedback": "Yay! Your answer is correct. The word Kite starts with the letter K.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'K' because Kite starts with K.",
+            "image": "images/K.png"
+        },
+        {
+            "question": "What is the opposite of Heavy?",
+            "options": ["Light", "Soft", "Easy", "Fast"],
+            "answer": "Light",
+            "correct_feedback": "Yay! Your answer is correct. The opposite of Heavy is Light.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Light' because it is the opposite of Heavy.",
+            "image": "images/englishquiz.png"
+        },
+        {
+            "question": "Which word starts with the letter G?",
+            "options": ["Dog", "Green", "Fish", "Apple"],
+            "answer": "Green",
+            "correct_feedback": "Yay! Your answer is correct. The word Green starts with the letter G.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Green' because it starts with G.",
+            "image": "images/G.png"
+        },
+        {
+            "question": "What is the opposite of Wet?",
+            "options": ["Dry", "Soft", "Cold", "Warm"],
+            "answer": "Dry",
+            "correct_feedback": "Yay! Your answer is correct. The opposite of Wet is Dry.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Dry' because it is the opposite of Wet.",
+            "image": "images/englishquiz.png"
+        },
+        {
+            "question": "Which letter comes between M and O?",
+            "options": ["N", "P", "K", "L"],
+            "answer": "N",
+            "correct_feedback": "Yay! Your answer is correct. The letter that comes between M and O is N.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'N' because it comes between M and O.",
+            "image": "images/englishquiz.png"
+        },
+        {
+            "question": "How many legs does a frog have?",
+            "options": ["4", "6", "2", "8"],
+            "answer": "4",
+            "correct_feedback": "Yay! Your answer is correct. A frog has 4 legs.",
+            "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is '4' because frogs have 4 legs.",
+            "image": "images/frog.jpg"
+        },
+      {
+          "question": "What is the opposite of Soft?",
+          "options": ["Hard", "Strong", "Weak", "Smooth"],
+          "answer": "Hard",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Soft is Hard.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Hard' because it is the opposite of Soft.",
+          "image": "images/englishquiz.png"
+      },
+      {
+          "question": "Which animal has a very long neck?",
+          "options": ["Lion", "Giraffe", "Elephant", "Zebra"],
+          "answer": "Giraffe",
+          "correct_feedback": "Yay! Your answer is correct. A giraffe has a long neck.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Giraffe' because it has a long neck.",
+          "image": "images/giraffe.png"
+      },
+      {
+          "question": "What is the opposite of Inside?",
+          "options": ["Outside", "Far", "Near", "Beside"],
+          "answer": "Outside",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Inside is Outside.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Outside' because it is the opposite of Inside.",
+          "image": "images/englishquiz.png"
+      },
+      {
+          "question": "What is the opposite of Empty?",
+          "options": ["Full", "Big", "Wide", "Heavy"],
+          "answer": "Full",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Empty is Full.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Full' because it is the opposite of Empty.",
+          "image": "images/englishquiz.png"
+      },
+      {
+          "question": "What letter comes at the end of the word Smile?",
+          "options": ["L", "E", "S", "I"],
+          "answer": "E",
+          "correct_feedback": "Yay! Your answer is correct. The word Smile ends with the letter E.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'E' because Smile ends with E.",
+          "image": "images/englishquiz.png"
+      },
+      {
+          "question": "What is the opposite of Slow?",
+          "options": ["Fast", "Quick", "Big", "Heavy"],
+          "answer": "Fast",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Slow is Fast.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Fast' because it is the opposite of Slow.",
+          "image": "images/englishquiz.png"
+      },
+      {
+          "question": "What is the color of the sun?",
+          "options": ["Red", "Yellow", "Green", "Blue"],
+          "answer": "Yellow",
+          "correct_feedback": "Yay! Your answer is correct. The sun is yellow.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Yellow' because the sun is yellow.",
+          "image": "images/sun.jpg"
+      },
+
+      {
+          "question": "Which animal lives in water?",
+          "options": ["Fish", "Dog", "Zebra", "Camel"],
+          "answer": "Fish",
+          "correct_feedback": "Yay! Your answer is correct. A fish lives in water.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Fish' because it lives in water.",
+          "image": "images/fish.jpg"
+      },
+      {
+          "question": "What is the opposite of Push?",
+          "options": ["Pull", "Lift", "Drop", "Push"],
+          "answer": "Pull",
+          "correct_feedback": "Yay! Your answer is correct. The opposite of Push is Pull.",
+          "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Pull' because it is the opposite of Push.",
+          "image": "images/englishquiz.png"
+      },
+      {
+        "question": "Which letter starts the word Table?",
+        "options": ["T", "A", "B", "E"],
+        "answer": "T",
+        "correct_feedback": "Yay! Your answer is correct. The word Table starts with the letter T.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'T' because Table starts with T.",
+        "image": "images/T.png"
+    },
+    {
+        "question": "What is the last letter in the word Ball?",
+        "options": ["B", "A", "L", "E"],
+        "answer": "L",
+        "correct_feedback": "Yay! Your answer is correct. The word Ball ends with the letter L.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'L' because Ball ends with L.",
+        "image": "images/ball.jpeg"
+    },
+    {
+        "question": "Which word starts with the letter A?",
+        "options": ["Apple", "Mango", "Fish", "Sun"],
+        "answer": "Apple",
+        "correct_feedback": "Yay! Your answer is correct. The word Apple starts with the letter A.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Apple' because Apple starts with A.",
+        "image": "images/A.png"
+    },
+    {
+        "question": "What is the opposite of Near?",
+        "options": ["Far", "Close", "Wide", "Small"],
+        "answer": "Far",
+        "correct_feedback": "Yay! Your answer is correct. The opposite of Near is Far.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Far' because it is the opposite of Near.",
+        "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the opposite of Stop?",
+      "options": ["Go", "Wait", "Slow", "Fast"],
+      "answer": "Go",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Stop is Go.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Go' because it is the opposite of Stop.",
+      "image": "images/englishquiz.png"
+    },
+
+    {
+      "question": "What is the opposite of Down?",
+      "options": ["Up", "Left", "Right", "Near"],
+      "answer": "Up",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Down is Up.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Up' because it is the opposite of Down.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the last letter in the word Lion?",
+      "options": ["N", "L", "I", "O"],
+      "answer": "N",
+      "correct_feedback": "Yay! Your answer is correct. The word Lion ends with the letter N.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'N' because Lion ends with N.",
+      "image": "images/lion spell.jpg"
+    },
+    {
+      "question": "What is the opposite of Big?",
+      "options": ["Small", "Short", "Light", "Thin"],
+      "answer": "Small",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Big is Small.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Small' because it is the opposite of Big.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the first letter of the word King?",
+      "options": ["K", "L", "N", "G"],
+      "answer": "K",
+      "correct_feedback": "Yay! Your answer is correct. The first letter of King is K.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'K' because King starts with K.",
+      "image": "images/K.png"
+    },
+    {
+      "question": "What is the opposite of Black?",
+      "options": ["White", "Blue", "Red", "Yellow"],
+      "answer": "White",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Black is White.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'White' because it is the opposite of Black.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "Which letter starts the word Grass?",
+      "options": ["G", "R", "A", "S"],
+      "answer": "G",
+      "correct_feedback": "Yay! Your answer is correct. The word Grass starts with the letter G.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'G' because Grass starts with G.",
+      "image": "images/G.png"
+    },
+    {
+      "question": "Which letter starts the word Balloon?",
+      "options": ["B", "A", "L", "N"],
+      "answer": "B",
+      "correct_feedback": "Yay! Your answer is correct. The word Balloon starts with the letter B.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because Balloon starts with B.",
+      "image": "images/B.png"
+    },
+    {
+      "question": "What is the last letter in the word Frog?",
+      "options": ["F", "G", "O", "R"],
+      "answer": "G",
+      "correct_feedback": "Yay! Your answer is correct. The word Frog ends with the letter G.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'G' because Frog ends with G.",
+      "image": "images/G.png"
+    },
+    {
+      "question": "Which letter comes before P?",
+      "options": ["O", "Q", "M", "L"],
+      "answer": "O",
+      "correct_feedback": "Yay! Your answer is correct. The letter that comes before P is O.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'O' because O comes before P.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the color of the leaves?",
+      "options": ["Red", "Green", "Yellow", "Blue"],
+      "answer": "Green",
+      "correct_feedback": "Yay! Your answer is correct. Leaves are green in color.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Green' because leaves are green.",
+      "image": "images/leaves.jpg"
+    },
+    {
+      "question": "What is the opposite of Quiet?",
+      "options": ["Loud", "Soft", "Big", "Strong"],
+      "answer": "Loud",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Quiet is Loud.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Loud' because it is the opposite of Quiet.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "Which letter starts the word Water?",
+      "options": ["W", "T", "E", "R"],
+      "answer": "W",
+      "correct_feedback": "Yay! Your answer is correct. The word Water starts with the letter W.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'W' because Water starts with W.",
+      "image": "images/W.png"
+    },
+    {
+      "question": "Which letter starts the word Rainbow?",
+      "options": ["R", "B", "A", "N"],
+      "answer": "R",
+      "correct_feedback": "Yay! Your answer is correct. The word Rainbow starts with the letter R.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'R' because Rainbow starts with R.",
+      "image": "images/Rainbow.jpg"
+    },
+    {
+      "question": "What is the opposite of Hard?",
+      "options": ["Soft", "Weak", "Strong", "Easy"],
+      "answer": "Soft",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Hard is Soft.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Soft' because it is the opposite of Hard.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "Which letter starts the word Pencil?",
+      "options": ["P", "T", "C", "L"],
+      "answer": "P",
+      "correct_feedback": "Yay! Your answer is correct. The word Pencil starts with the letter P.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'P' because Pencil starts with P.",
+      "image": "images/P.png"
+    },
+    {
+      "question": "What is the last letter in the word Dog?",
+      "options": ["G", "D", "O", "F"],
+      "answer": "G",
+      "correct_feedback": "Yay! Your answer is correct. The word Dog ends with the letter G.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'G' because Dog ends with G.",
+      "image": "images/G.png"
+    },
+    {
+      "question": "Which letter starts the word Star?",
+      "options": ["S", "T", "A", "R"],
+      "answer": "S",
+      "correct_feedback": "Yay! Your answer is correct. The word Star starts with the letter S.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'S' because Star starts with S.",
+      "image": "images/S.png"
+    },
+    {
+      "question": "Which letter starts the word Tiger?",
+      "options": ["T", "G", "I", "R"],
+      "answer": "T",
+      "correct_feedback": "Yay! Your answer is correct. The word Tiger starts with the letter T.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'T' because Tiger starts with T.",
+      "image": "images/T.png"
+    },
+    {
+      "question": "What is the opposite of Cold?",
+      "options": ["Hot", "Warm", "Cool", "Dry"],
+      "answer": "Hot",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Cold is Hot.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Hot' because it is the opposite of Cold.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the last letter in the word Rainbow?",
+      "options": ["R", "W", "N", "B"],
+      "answer": "W",
+      "correct_feedback": "Yay! Your answer is correct. The word Rainbow ends with the letter W.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'W' because Rainbow ends with W.",
+      "image": "images/Rainbow.jpg"
+    },
+    {
+      "question": "What is the opposite of Light?",
+      "options": ["Heavy", "Dark", "Bright", "Thin"],
+      "answer": "Heavy",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Light is Heavy.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Heavy' because it is the opposite of Light.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the first letter of the word Lamp?",
+      "options": ["L", "A", "M", "P"],
+      "answer": "L",
+      "correct_feedback": "Yay! Your answer is correct. The first letter of Lamp is L.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'L' because Lamp starts with L.",
+      "image": "images/L.png"
+    },
+    {
+      "question": "Which letter starts the word Nest?",
+      "options": ["N", "T", "S", "E"],
+      "answer": "N",
+      "correct_feedback": "Yay! Your answer is correct. The word Nest starts with the letter N.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'N' because Nest starts with N.",
+      "image": "images/N.png"
+    },
+    {
+      "question": "What is the opposite of Far?",
+      "options": ["Near", "Close", "Next", "Short"],
+      "answer": "Near",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Far is Near.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Near' because it is the opposite of Far.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the first letter of the word Balloon?",
+      "options": ["B", "A", "L", "N"],
+      "answer": "B",
+      "correct_feedback": "Yay! Your answer is correct. The first letter of Balloon is B.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'B' because Balloon starts with B.",
+      "image": "images/B.png"
+    },
+    {
+      "question": "What is the opposite of Day?",
+      "options": ["Night", "Morning", "Noon", "Evening"],
+      "answer": "Night",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Day is Night.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Night' because it is the opposite of Day.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "Which letter starts the word Watermelon?",
+      "options": ["W", "A", "E", "M"],
+      "answer": "W",
+      "correct_feedback": "Yay! Your answer is correct. The word Watermelon starts with the letter W.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'W' because Watermelon starts with W.",
+      "image": "images/W.png"
+    },
+    {
+      "question": "What is the last letter in the word Apple?",
+      "options": ["E", "L", "P", "A"],
+      "answer": "E",
+      "correct_feedback": "Yay! Your answer is correct. The word Apple ends with the letter E.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'E' because Apple ends with E.",
+      "image": "images/apple.jpg"
+    },
+    {
+      "question": "What is the first letter of the word Snake?",
+      "options": ["S", "N", "A", "K"],
+      "answer": "S",
+      "correct_feedback": "Yay! Your answer is correct. The first letter of Snake is S.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'S' because Snake starts with S.",
+      "image": "images/S.png"
+    },
+    {
+      "question": "What is the opposite of Quiet?",
+      "options": ["Loud", "Big", "Small", "Soft"],
+      "answer": "Loud",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Quiet is Loud.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Loud' because it is the opposite of Quiet.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "Which letter starts the word Queen?",
+      "options": ["Q", "E", "R", "N"],
+      "answer": "Q",
+      "correct_feedback": "Yay! Your answer is correct. The word Queen starts with the letter Q.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Q' because Queen starts with Q.",
+      "image": "images/Q.png"
+    },
+    {
+      "question": "What is the opposite of Thin?",
+      "options": ["Thick", "Big", "Fat", "Strong"],
+      "answer": "Thick",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Thin is Thick.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Thick' because it is the opposite of Thin.",
+      "image": "images/englishquiz.png"
+    },
+    {
+      "question": "What is the opposite of Empty?",
+      "options": ["Full", "Big", "Heavy", "Light"],
+      "answer": "Full",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Empty is Full.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Full' because it is the opposite of Empty.",
+      "image": "images/englishquiz.png"
+    },
+
+    {
+      "question": "What is the opposite of Near?",
+      "options": ["Far", "Close", "Short", "Small"],
+      "answer": "Far",
+      "correct_feedback": "Yay! Your answer is correct. The opposite of Near is Far.",
+      "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is 'Far' because it is the opposite of Near.",
+      "image": "images/englishquiz.png"
+    }
+        ],
+    "math":
+    [
+        {
+        "question": "How many sides does a triangle have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. A triangle has 3 sides.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a triangle always has 3 sides.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is 5 - 3?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 5 minus 3 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 5 minus 3 equals 2.",
+        "image": "images/mathaddsub.jpeg"
+    },
+    {
+        "question": "What shape is a ball?",
+        "options": ["Cube", "Circle", "Rectangle", "Triangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yay! Your answer is correct. A ball is round like a circle.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a ball is round like a circle.",
+        "image": "images/ball.jpeg"
+    },
+    {
+        "question": "What number comes before 10?",
+        "options": ["8", "9", "11", "12"],
+        "answer": "9",
+        "correct_feedback": "Yay! Your answer is correct. The number before 10 is 9.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 9 comes before 10.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "If you have 4 apples and eat 2, how many are left?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. If you eat 2 apples, you are left with 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 4 minus 2 equals 2.",
+        "image": "images/mathsapples.jpeg"
+    },
+    {
+        "question": "Which is smaller, 3 or 7?",
+        "options": ["3", "7", "Both are equal", "None"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 3 is smaller than 7.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 3 is smaller than 7.",
+        "image": "images/mathssmaller.jpeg"
+    },
+    {
+        "question": "How many corners does a square have?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A square has 4 corners.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a square always has 4 corners.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is 2 + 3?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 2 + 3 equals 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 2 + 3 equals 5.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What shape is a pizza slice?",
+        "options": ["Circle", "Triangle", "Square", "Rectangle"],
+        "answer": "Triangle",
+        "correct_feedback": "Yay! Your answer is correct. A pizza slice is shaped like a triangle.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a pizza slice is shaped like a triangle.",
+        "image": "images/mathspizza.jpeg"
+    },
+    {
+        "question": "How many legs do two dogs have?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. Two dogs have 8 legs together.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as each dog has 4 legs, so 2 dogs have 8 legs.",
+        "image": "images/mathsdogs.png"
+    },
+    {
+        "question": "What is 6 - 4?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 6 minus 4 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 6 minus 4 equals 2.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 10 - 7?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 10 minus 7 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 10 minus 7 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many wheels does a car usually have?",
+        "options": ["2", "3", "4", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A car usually has 4 wheels.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a car usually has 4 wheels.",
+        "image": "images/mathscar.jpeg"
+    },
+    {
+        "question": "Which number is greater, 10 or 5?",
+        "options": ["10", "5", "Both are equal", "None"],
+        "answer": "10",
+        "correct_feedback": "Yay! Your answer is correct. 10 is greater than 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 10 is greater than 5.",
+        "image": "images/mathsgreater.png"
+    },
+    {
+        "question": "What is 3 + 1?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 3 + 1 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 3 + 1 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 7 + 2?",
+        "options": ["8", "9", "10", "11"],
+        "answer": "9",
+        "correct_feedback": "Yay! Your answer is correct. 7 + 2 equals 9.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 7 + 2 equals 9.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many legs does a spider have?",
+        "options": ["6", "8", "10", "12"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. A spider has 8 legs.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a spider has 8 legs.",
+        "image": "images/mathsspider.png"
+    },
+    {
+        "question": "What number comes after 3?",
+        "options": ["2", "4", "5", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. The number after 3 is 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as the number after 3 is 4.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "What is 4 + 4?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 4 + 4 equals 8.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 4 + 4 equals 8.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many fingers are on one hand?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. One hand has 5 fingers.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as one hand has 5 fingers.",
+        "image": "images/mathsfingers.jpeg"
+    },
+    {
+        "question": "Which is smaller, 1 or 3?",
+        "options": ["1", "3", "Both are equal", "None"],
+        "answer": "1",
+        "correct_feedback": "Yay! Your answer is correct. 1 is smaller than 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 1 is smaller than 3.",
+        "image": "images/mathssmaller.jpeg"
+    },
+    {
+        "question": "What is 10 + 0?",
+        "options": ["9", "10", "11", "12"],
+        "answer": "10",
+        "correct_feedback": "Yay! Your answer is correct. 10 + 0 equals 10.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 10 + 0 equals 10.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What shape is a dice?",
+        "options": ["Cube", "Circle", "Rectangle", "Triangle"],
+        "answer": "Cube",
+        "correct_feedback": "Yay! Your answer is correct. A dice is shaped like a cube.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as a dice is shaped like a cube.",
+        "image": "images/mathsdice.jpeg"
+    },
+    {
+        "question": "What is 8 - 5?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 8 minus 5 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 8 minus 5 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many eyes do humans have?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. Humans have 2 eyes.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as humans have 2 eyes.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is 1 + 2?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 1 + 2 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 1 + 2 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What number comes after 6?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. The number after 6 is 7.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as the number after 6 is 7.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "How many ears does a cat have?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. A cat has 2 ears.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a cat has 2 ears.",
+        "image": "images/mathscat.jpeg"
+    },
+    {
+        "question": "What is 5 + 3?",
+        "options": ["7", "8", "9", "10"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 5 + 3 equals 8.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 5 + 3 equals 8.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the shape of a clock?",
+        "options": ["Triangle", "Circle", "Square", "Rectangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yay! Your answer is correct. Most clocks are circular in shape.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as most clocks are circular in shape.",
+        "image": "images/mathsclock.png"
+    },
+    {
+        "question": "What is 9 - 6?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 9 minus 6 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 9 minus 6 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many wheels does a bicycle have?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. A bicycle has 2 wheels.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a bicycle has 2 wheels.",
+        "image": "images/mathsbicycle.png"
+    },
+    {
+        "question": "Which number is bigger, 8 or 4?",
+        "options": ["8", "4", "Both are equal", "None"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 8 is bigger than 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 8 is bigger than 4.",
+        "image": "images/mathsgreater.png"
+    },
+    {
+        "question": "What is 10 - 8?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 10 minus 8 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 10 minus 8 equals 2.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many hands are on a clock?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. Most clocks have 2 hands: a minute hand and an hour hand.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as most clocks have 2 hands.",
+        "image": "images/mathsclock.png"
+    },
+    {
+        "question": "What is 2 + 6?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 2 + 6 equals 8.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 2 + 6 equals 8.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many corners does a square have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A square has 4 corners.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a square has 4 corners.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is 1 + 1?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 1 + 1 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 1 + 1 equals 2.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the shape of a ball?",
+        "options": ["Circle", "Square", "Triangle", "Cube"],
+        "answer": "Circle",
+        "correct_feedback": "Yay! Your answer is correct. A ball is round and circular in shape.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as a ball is round and circular in shape.",
+        "image": "images/mathsball.png"
+    },
+    {
+        "question": "How many eyes does a butterfly have?",
+        "options": ["2", "4", "6", "8"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. A butterfly has 2 eyes.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as a butterfly has 2 eyes.",
+        "image": "images/mathsbutterfly.jpeg"
+    },
+    {
+        "question": "What is 6 - 2?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 6 minus 2 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 6 minus 2 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many legs does a horse have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A horse has 4 legs.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a horse has 4 legs.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is 4 + 4?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 4 + 4 equals 8.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 4 + 4 equals 8.",
+        "image": "images/mathsaddsub.png"
+    },
+    {
+        "question": "How many months are there in a year?",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12",
+        "correct_feedback": "Yay! Your answer is correct. There are 12 months in a year.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as there are 12 months in a year.",
+        "image": "images/mathscalendar.png"
+    },
+    {
+        "question": "What is the first number after 9?",
+        "options": ["10", "8", "7", "6"],
+        "answer": "10",
+        "correct_feedback": "Yay! Your answer is correct. The number after 9 is 10.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as the number after 9 is 10.",
+        "image": "images/mathsnumbers.jpeg"
+    },
+    {
+        "question": "How many feet does a dog have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A dog has 4 feet.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a dog has 4 feet.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What shape is a stop sign?",
+        "options": ["Circle", "Square", "Octagon", "Triangle"],
+        "answer": "Octagon",
+        "correct_feedback": "Yay! Your answer is correct. A stop sign is in the shape of an octagon.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a stop sign is an octagon.",
+        "image": "images/mathsstopsign.png"
+    },
+    {
+        "question": "What is 3 + 3?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "correct_feedback": "Yay! Your answer is correct. 3 + 3 equals 6.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 3 + 3 equals 6.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 7 - 4?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 7 - 4 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 7 - 4 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 5 + 2?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. 5 + 2 equals 7.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 5 + 2 equals 7.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 5 - 1?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 5 - 1 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 5 - 1 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "Which number comes before 6?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. The number before 6 is 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as the number before 6 is 5.",
+        "image": "images/mathsnumbers.jpeg"
+    },
+    {
+        "question": "What is 3 + 1?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 3 + 1 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 3 + 1 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many fingers do you have?",
+        "options": ["6", "7", "8", "10"],
+        "answer": "10",
+        "correct_feedback": "Yay! Your answer is correct. We have 10 fingers.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 4, as we have 10 fingers.",
+        "image": "images/mathsfingers.jpeg"
+    },
+    {
+        "question": "What is 7 - 5?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 7 - 5 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 7 - 5 equals 2.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the number after 8?",
+        "options": ["6", "7", "9", "10"],
+        "answer": "9",
+        "correct_feedback": "Yay! Your answer is correct. The number after 8 is 9.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as the number after 8 is 9.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "What is 6 - 2?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 6 - 2 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 6 - 2 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 1 + 3?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. 1 + 3 equals 4.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 1 + 3 equals 4.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the next number after 2?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. The next number after 2 is 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as the next number after 2 is 3.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "What is 10 - 7?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. 10 - 7 equals 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 10 - 7 equals 3.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "How many days are in a week?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. There are 7 days in a week.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as there are 7 days in a week.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "How many wheels does a car have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A car has 4 wheels.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a car has 4 wheels.",
+        "image": "images/mathscar.jpeg"
+    },
+    {
+        "question": "What is 9 - 4?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 9 - 4 equals 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 9 - 4 equals 5.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 5 + 3?",
+        "options": ["7", "8", "9", "10"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 5 + 3 equals 8.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 5 + 3 equals 8.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 4 + 1?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 4 + 1 equals 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 4 + 1 equals 5.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "Which number is bigger, 3 or 5?",
+        "options": ["3", "5", "Both are the same", "Neither"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 5 is bigger than 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 5 is bigger than 3.",
+        "image": "images/mathsnumbers.jpeg"
+    },
+    {
+        "question": "What is the number before 4?",
+        "options": ["1", "2", "3", "5"],
+        "answer": "3",
+        "correct_feedback": "Yay! Your answer is correct. The number before 4 is 3.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as the number before 4 is 3.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "What is 10 - 3?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. 10 - 3 equals 7.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 10 - 3 equals 7.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the number after 1?",
+        "options": ["0", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. The number after 1 is 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as the number after 1 is 2.",
+        "image": "images/englishquiz.png"
+    },
+    {
+        "question": "What is 2 + 3?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 2 + 3 equals 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 2 + 3 equals 5.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+     {
+            "question": "If you have 4 balloons and one bursts, how many are left?",
+            "options": [
+                "3",
+                "2",
+                "5",
+                "4"
+            ],
+            "answer": "3",
+            "correct_feedback": "Yay! If one balloon bursts from 4, you're left with 3.",
+            "incorrect_feedback": "Oops! The correct answer is 3 because 4 minus 1 equals 3.",
+            "image": "images/mathsballoons.png"
+        },
+        {
+            "question": "If you take 2 apples from 5, how many are left?",
+            "options": [
+                "2",
+                "4",
+                "6",
+                "3"
+            ],
+            "answer": "3",
+            "correct_feedback": "Yay! 3 is the correct answer.",
+            "incorrect_feedback": "Oops! The correct answer is 3.",
+            "image": "images/mathsapples.jpeg"
+        },
+         {
+            "question": "How many corners does a triangle have?",
+            "options": [
+                "2",
+                "4",
+                "6",
+                "3"
+            ],
+            "answer": "3",
+            "correct_feedback": "Yay! 3 is the correct answer.",
+            "incorrect_feedback": "Oops! The correct answer is 3.",
+            "image": "images/quizimage.png"
+        },
+        {
+            "question": "How many corners does a triangle have?",
+            "options": [
+                "2",
+                "4",
+                "6",
+                "3"
+            ],
+            "answer": "3",
+            "correct_feedback": "Yay! 3 is the correct answer.",
+            "incorrect_feedback": "Oops! The correct answer is 3.",
+            "image": "images/quizimage.png"
+        },
+        {
+        "question": "What is 6 - 4?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. 6 - 4 equals 2.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 6 - 4 equals 2.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 8 - 3?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 8 - 3 equals 5.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 8 - 3 equals 5.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is 3 + 3?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "correct_feedback": "Yay! Your answer is correct. 3 + 3 equals 6.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 3 + 3 equals 6.",
+        "image": "images/mathsaddsub.jpeg"
+    },
+    {
+        "question": "What is the first number in the number line?",
+        "options": ["0", "1", "2", "3"],
+        "answer": "0",
+        "correct_feedback": "Yay! Your answer is correct. The first number in the number line is 0.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as the first number in the number line is 0.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "If you have 3 candies and eat 1, how many are left?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. If you eat 1 candy from 3, 2 are left.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 3 - 1 equals 2.",
+        "image": "images/mathscandies.jpeg"
+    },
+    {
+        "question": "Which number comes after 9?",
+        "options": ["7", "8", "9", "10"],
+        "answer": "10",
+        "correct_feedback": "Yay! Your answer is correct. The number after 9 is 10.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 4, as the number after 9 is 10.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "If you have 10 fingers, how many would you have if you lose 3?",
+        "options": ["6", "7", "8", "9"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. If you lose 3 fingers from 10, you will have 7 left.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 10 - 3 equals 7.",
+        "image": "images/mathsfingers.jpeg"
+    },
+    {
+        "question": "Which of these numbers is the smallest?",
+        "options": ["1", "5", "10", "15"],
+        "answer": "1",
+        "correct_feedback": "Yay! Your answer is correct. 1 is the smallest number here.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 1 is the smallest number.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "If you have 4 bananas and give 2 away, how many do you have left?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "correct_feedback": "Yay! Your answer is correct. If you give away 2 bananas from 4, you have 2 left.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 4 - 2 equals 2.",
+        "image": "images/mathsbananas.png"
+    },
+    {
+        "question": "Which number is even?",
+        "options": ["3", "5", "8", "9"],
+        "answer": "8",
+        "correct_feedback": "Yay! Your answer is correct. 8 is an even number.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 8 is an even number.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "If you have 10 balls and give away 5, how many do you have left?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. If you give away 5 balls from 10, you have 5 left.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as 10 - 5 equals 5.",
+        "image": "images/mathsballs.jpeg"
+    },
+    {
+        "question": "Which of these is a shape with 4 equal sides?",
+        "options": ["Triangle", "Square", "Circle", "Rectangle"],
+        "answer": "Square",
+        "correct_feedback": "Yay! Your answer is correct. A square has 4 equal sides.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a square has 4 equal sides.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which of these numbers is odd?",
+        "options": ["2", "4", "6", "7"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. 7 is an odd number.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 4, as 7 is an odd number.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "How many legs does a dog have?",
+        "options": ["2", "4", "6", "8"],
+        "answer": "4",
+        "correct_feedback": "Yay! Your answer is correct. A dog has 4 legs.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a dog has 4 legs.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "How many oranges do you have if you get 3 and already have 2?",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. 2 oranges plus 3 equals 5 oranges.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as 2 + 3 equals 5.",
+        "image": "images/mathsoranges.jpeg"
+    },
+    {
+        "question": "How many seconds are in a minute?",
+        "options": ["30", "45", "60", "100"],
+        "answer": "60",
+        "correct_feedback": "Yay! Your answer is correct. There are 60 seconds in a minute.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as there are 60 seconds in a minute.",
+        "image": "images/mathsclock.png"
+    },
+    {
+        "question": "Which number is smaller, 1 or 9?",
+        "options": ["1", "9", "Both are the same", "Neither"],
+        "answer": "1",
+        "correct_feedback": "Yay! Your answer is correct. 1 is smaller than 9.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 1, as 1 is smaller than 9.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which shape has no corners?",
+        "options": ["Square", "Circle", "Triangle", "Rectangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yay! Your answer is correct. A circle has no corners.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as a circle has no corners.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "How many toes do we have on one foot?",
+        "options": ["4", "5", "6", "3"],
+        "answer": "5",
+        "correct_feedback": "Yay! Your answer is correct. We have 5 toes on one foot.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as we have 5 toes on one foot.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What shape is the sun?",
+        "options": ["Square", "Circle", "Rectangle", "Triangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yay! Your answer is correct. The sun is a circle.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 2, as the sun is a circle.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "How many colors are in a rainbow?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "correct_feedback": "Yay! Your answer is correct. A rainbow has 7 colors.",
+        "incorrect_feedback": "Oops! Your answer is incorrect. The correct answer is Option 3, as a rainbow has 7 colors.",
+        "image": "images/mathsrainbow.jpeg"
+    }
+
+    ],
+
+
+
+
+    "gk":
+   [
+    {
+        "question": "What colour is a ripe banana?",
+        "options": ["Red", "Yellow", "Green", "Purple"],
+        "answer": "Yellow",
+        "correct_feedback": "Yes, that's right! Ripe bananas are yellow and sweet.",
+        "incorrect_feedback": "No, the correct answer is Yellow. Bananas turn yellow when they are ripe and ready to eat.",
+        "image": "images/banana.jpg"
+
+    },
+    {
+        "question": "What sound does a dog make?",
+        "options": ["Meow", "Moo", "Woof", "Quack"],
+        "answer": "Woof",
+        "correct_feedback": "Yes, that's right! Dogs say 'Woof' when they bark.",
+        "incorrect_feedback": "No, the correct answer is Woof. Dogs bark by saying 'Woof.'",
+        "image": "images/dog.jpeg"
+    },
+    {
+        "question": "What is the colour of grass?",
+        "options": ["Red", "Yellow", "Green", "Orange"],
+        "answer": "Green",
+        "correct_feedback": "Yes, that's right! Grass is green because it grows fresh and healthy.",
+        "incorrect_feedback": "No, the correct answer is Green. Grass is green when it’s alive and healthy.",
+        "image": "images/grass.jpg"
+    },
+    {
+        "question": "Which animal is present in the picture?",
+        "options": ["Hen", "Peacock", "Lion", "Tiger"],
+        "answer": "Peacock",
+        "correct_feedback": "Yes, that's right! The animal present in picture is Peacock.",
+        "incorrect_feedback": "No, the correct answer is Peacock. ",
+        "image": "images/gk1.jpg"
+    },
+    {
+        "question": "What do bees make?",
+        "options": ["Milk", "Honey", "Water", "Bread"],
+        "answer": "Honey",
+        "correct_feedback": "Yes, that's right! Bees make honey, which is sweet and yummy.",
+        "incorrect_feedback": "No, the correct answer is Honey. Bees make honey from flowers, and it is sweet and healthy.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the colour of the sky?",
+        "options": ["Pink", "Blue", "Yellow", "Green"],
+        "answer": "Blue",
+        "correct_feedback": "Yes, that's right! The sky is blue during the day due to the way sunlight is scattered.",
+        "incorrect_feedback": "No, the correct answer is Blue. The sky is blue because of sunlight scattering in the atmosphere.",
+        "image": "images/sky.jpeg"
+    },
+    {
+        "question": "Which planet is the largest planet in the solar system?",
+        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "answer": "Jupiter",
+        "correct_feedback": "Yes, that's right! Jupiter is the largest planet in our solar system.",
+        "incorrect_feedback": "No, the correct answer is Jupiter. It is the largest planet in the solar system and is known for its Great Red Spot.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What do cows give us?",
+        "options": ["Eggs", "Milk", "Wool", "Honey"],
+        "answer": "Milk",
+        "correct_feedback": "Yes, that's right! Cows give us milk that we drink every day.",
+        "incorrect_feedback": "No, the correct answer is Milk. Cows give us milk, which we use to make many tasty things.",
+        "image": "images/gk2.jpeg"
+    },
+    {
+        "question": "Which animal is known for its long neck?",
+        "options": ["Giraffe", "Elephant", "Lion", "Monkey"],
+        "answer": "Giraffe",
+        "correct_feedback": "Yes, that's right! Giraffes are known for their long necks.",
+        "incorrect_feedback": "No, the correct answer is Giraffe. They have long necks that help them reach tall trees.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What fruit is known for keeping doctors away?",
+        "options": ["Apple", "Banana", "Orange", "Watermelon"],
+        "answer": "Apple",
+        "correct_feedback": "Yes, that's right! An apple a day keeps the doctor away.",
+        "incorrect_feedback": "No, the correct answer is Apple. It’s said that eating apples keeps us healthy.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What shape is a basketball?",
+        "options": ["Square", "Circle", "Triangle", "Rectangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yes, that's right! A basketball is a round shape, like a circle.",
+        "incorrect_feedback": "No, the correct answer is Circle. Basketballs are round so they can bounce easily.",
+        "image": "images/gk3.png"
+    },
+    {
+        "question": "What is the opposite of 'up'?",
+        "options": ["Down", "Left", "Right", "Forward"],
+        "answer": "Down",
+        "correct_feedback": "Yes, that's right! Down is the opposite of up.",
+        "incorrect_feedback": "No, the correct answer is Down. When you go down, you're going the opposite of up.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which animal can fly?",
+        "options": ["Dog", "Fish", "Bird", "Elephant"],
+        "answer": "Bird",
+        "correct_feedback": "Yes, that's right! Birds can fly in the sky.",
+        "incorrect_feedback": "No, the correct answer is Bird. Birds have wings that allow them to fly.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What color is a pumpkin?",
+        "options": ["Blue", "Red", "Orange", "Purple"],
+        "answer": "Orange",
+        "correct_feedback": "Yes, that's right! Pumpkins are orange, especially during Halloween.",
+        "incorrect_feedback": "No, the correct answer is Orange. Pumpkins are usually orange in color.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What do you wear on your feet?",
+        "options": ["Hat", "Shoes", "Gloves", "Socks"],
+        "answer": "Shoes",
+        "correct_feedback": "Yes, that's right! We wear shoes to protect our feet.",
+        "incorrect_feedback": "No, the correct answer is Shoes. Shoes help protect your feet while you walk.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What color are strawberries?",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "Red",
+        "correct_feedback": "Yes, that's right! Strawberries are red when they are ripe and sweet.",
+        "incorrect_feedback": "No, the correct answer is Red. Strawberries are red when they're ready to eat.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which of these is a vegetable?",
+        "options": ["Carrot", "Apple", "Banana", "Orange"],
+        "answer": "Carrot",
+        "correct_feedback": "Yes, that's right! Carrots are a type of vegetable.",
+        "incorrect_feedback": "No, the correct answer is Carrot. It's a healthy vegetable we can eat.",
+        "image": "images/gk4.jpeg"
+    },
+    {
+        "question": "What do we use to tell time?",
+        "options": ["Pen", "Clock", "Book", "Chair"],
+        "answer": "Clock",
+        "correct_feedback": "Yes, that's right! We use a clock to tell the time.",
+        "incorrect_feedback": "No, the correct answer is Clock. We look at a clock to know the time.",
+        "image": "images/gk5.jpeg"
+    },
+    {
+        "question": "What is the opposite of 'hot'?",
+        "options": ["Cold", "Fast", "Slow", "Big"],
+        "answer": "Cold",
+        "correct_feedback": "Yes, that's right! Cold is the opposite of hot.",
+        "incorrect_feedback": "No, the correct answer is Cold. Cold is the opposite of hot.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What color is an apple?",
+        "options": ["Red", "Green", "Yellow", "Purple"],
+        "answer": "Red",
+        "correct_feedback": "Yes, that's right! Apples are often red.",
+        "incorrect_feedback": "No, the correct answer is Red. Apples can be red, but also green and yellow.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which of these animals is a mammal?",
+        "options": ["Fish", "Shark", "Bat", "Snake"],
+        "answer": "Bat",
+        "correct_feedback": "Yes, that's right! Bats are mammals and can fly.",
+        "incorrect_feedback": "No, the correct answer is Bat. Bats are mammals, unlike fish or snakes.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the name of our planet?",
+        "options": ["Earth", "Mars", "Venus", "Jupiter"],
+        "answer": "Earth",
+        "correct_feedback": "Yes, that's right! Our planet is called Earth.",
+        "incorrect_feedback": "No, the correct answer is Earth. We live on Earth, which is a beautiful planet.",
+        "image": "images/gk6.jpg"
+    },
+    {
+        "question": "What is the color of a stop sign?",
+        "options": ["Green", "Red", "Blue", "Yellow"],
+        "answer": "Red",
+        "correct_feedback": "Yes, that's right! Stop signs are red to catch our attention.",
+        "incorrect_feedback": "No, the correct answer is Red. Stop signs are red so drivers know to stop.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the name of the red fruit that keeps the doctor away?",
+        "options": ["Orange", "Strawberry", "Apple", "Peach"],
+        "answer": "Apple",
+        "correct_feedback": "Yes, that's right! An apple a day keeps the doctor away.",
+        "incorrect_feedback": "No, the correct answer is Apple. Apples are said to keep us healthy.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What sound does a cat make?",
+        "options": ["Meow", "Moo", "Quack", "Woof"],
+        "answer": "Meow",
+        "correct_feedback": "Yes, that's right! Cats make a 'Meow' sound.",
+        "incorrect_feedback": "No, the correct answer is Meow. Cats meow to communicate.",
+        "image": "images/gk7.png"
+    },
+    {
+        "question": "What is the name of the ship that took people to the moon?",
+        "options": ["Discovery", "Columbia", "Apollo", "Atlantis"],
+        "answer": "Apollo",
+        "correct_feedback": "Yes, that's right! Apollo was the name of the ship that took people to the moon.",
+        "incorrect_feedback": "No, the correct answer is Apollo. Apollo was the spacecraft that took astronauts to the moon.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which animal is known for being very slow?",
+        "options": ["Rabbit", "Elephant", "Turtle", "Dog"],
+        "answer": "Turtle",
+        "correct_feedback": "Yes, that's right! Turtles are known for being very slow.",
+        "incorrect_feedback": "No, the correct answer is Turtle. Turtles move slowly.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which animal is the tallest in the world?",
+        "options": ["Giraffe", "Elephant", "Lion", "Kangaroo"],
+        "answer": "Giraffe",
+        "correct_feedback": "Yes, that's right! Giraffes are the tallest animals in the world.",
+        "incorrect_feedback": "No, the correct answer is Giraffe. They have long necks and can reach great heights.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the opposite of 'empty'?",
+        "options": ["Full", "Big", "Small", "Loud"],
+        "answer": "Full",
+        "correct_feedback": "Yes, that's right! Full is the opposite of empty.",
+        "incorrect_feedback": "No, the correct answer is Full. When something is full, it's not empty anymore.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What shape is a clock?",
+        "options": ["Circle", "Square", "Triangle", "Rectangle"],
+        "answer": "Circle",
+        "correct_feedback": "Yes, that's right! A clock is shaped like a circle.",
+        "incorrect_feedback": "No, the correct answer is Circle. Clocks are round like a circle.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which animal says 'Moo'?",
+        "options": ["Dog", "Cat", "Cow", "Sheep"],
+        "answer": "Cow",
+        "correct_feedback": "Yes, that's right! Cows say 'Moo'.",
+        "incorrect_feedback": "No, the correct answer is Cow. Cows make a 'Moo' sound.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which of these is a mode of transportation?",
+        "options": ["Chair", "Bus", "Shirt", "Pillow"],
+        "answer": "Bus",
+        "correct_feedback": "Yes, that's right! A bus is a type of transportation.",
+        "incorrect_feedback": "No, the correct answer is Bus. A bus is used to carry people from one place to another.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the name of the famous mouse?",
+        "options": ["Donald", "Mickey", "Goofy", "Pluto"],
+        "answer": "Mickey",
+        "correct_feedback": "Yes, that's right! Mickey Mouse is a famous cartoon character.",
+        "incorrect_feedback": "No, the correct answer is Mickey. Mickey Mouse is one of the most famous cartoon characters.",
+        "image": "images/gk8.jpeg"
+    },
+    {
+        "question": "Which of these is an insect?",
+        "options": ["Fish", "Ant", "Dog", "Bird"],
+        "answer": "Ant",
+        "correct_feedback": "Yes, that's right! Ants are insects.",
+        "incorrect_feedback": "No, the correct answer is Ant. Ants are small insects that live in groups.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which animal has a long trunk?",
+        "options": ["Lion", "Elephant", "Giraffe", "Monkey"],
+        "answer": "Elephant",
+        "correct_feedback": "Yes, that's right! Elephants have long trunks.",
+        "incorrect_feedback": "No, the correct answer is Elephant. Elephants are known for their long trunks.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the opposite of 'big'?",
+        "options": ["Tall", "Small", "Heavy", "Loud"],
+        "answer": "Small",
+        "correct_feedback": "Yes, that's right! Small is the opposite of big.",
+        "incorrect_feedback": "No, the correct answer is Small. Small is the opposite of big.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which fruit is yellow when ripe?",
+        "options": ["Apple", "Banana", "Strawberry", "Orange"],
+        "answer": "Banana",
+        "correct_feedback": "Yes, that's right! Bananas are yellow when they are ripe.",
+        "incorrect_feedback": "No, the correct answer is Banana. Bananas turn yellow when they ripen.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What do we drink from?",
+        "options": ["Cup", "Shoe", "Plate", "Spoon"],
+        "answer": "Cup",
+        "correct_feedback": "Yes, that's right! We drink from a cup.",
+        "incorrect_feedback": "No, the correct answer is Cup. We use cups for drinking liquids.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which is the smallest planet in the solar system?",
+        "options": ["Mercury", "Venus", "Mars", "Earth"],
+        "answer": "Mercury",
+        "correct_feedback": "Yes, that's right! Mercury is the smallest planet in the solar system.",
+        "incorrect_feedback": "No, the correct answer is Mercury. It is the smallest planet in the solar system.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the capital of India?",
+        "options": ["Mumbai", "New Delhi", "Chennai", "Kolkata"],
+        "answer": "New Delhi",
+        "correct_feedback": "Yes, that's right! New Delhi is the capital of India.",
+        "incorrect_feedback": "No, the correct answer is New Delhi. It is the capital city of India.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which is the tallest mountain in the world?",
+        "options": ["K2", "Mount Everest", "Kangchenjunga", "Mount Kilimanjaro"],
+        "answer": "Mount Everest",
+        "correct_feedback": "Yes, that's right! Mount Everest is the tallest mountain in the world.",
+        "incorrect_feedback": "No, the correct answer is Mount Everest. It is the tallest mountain in the world.",
+        "image": "images/gk9.jpeg"
+    },
+    {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": ["China", "India", "Japan", "South Korea"],
+        "answer": "Japan",
+        "correct_feedback": "Yes, that's right! Japan is known as the Land of the Rising Sun.",
+        "incorrect_feedback": "No, the correct answer is Japan. It is known for being the first to see the sunrise.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the largest desert in the world?",
+        "options": ["Sahara Desert", "Gobi Desert", "Antarctic Desert", "Thar Desert"],
+        "answer": "Antarctic Desert",
+        "correct_feedback": "Yes, that's right! The Antarctic Desert is the largest desert in the world.",
+        "incorrect_feedback": "No, the correct answer is Antarctic Desert. Though icy, it is the largest desert by area.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which is the fastest land animal?",
+        "options": ["Lion", "Cheetah", "Horse", "Leopard"],
+        "answer": "Cheetah",
+        "correct_feedback": "Yes, that's right! The cheetah is the fastest land animal.",
+        "incorrect_feedback": "No, the correct answer is Cheetah. It can run at speeds up to 70 mph.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which country is the largest by land area?",
+        "options": ["Canada", "Russia", "China", "USA"],
+        "answer": "Russia",
+        "correct_feedback": "Yes, that's right! Russia is the largest country by land area.",
+        "incorrect_feedback": "No, the correct answer is Russia. It spans across Europe and Asia.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the color of a sunflower?",
+        "options": ["Red", "Blue", "Yellow", "Purple"],
+        "answer": "Yellow",
+        "correct_feedback": "Yes, that's right! Sunflowers are bright yellow in color.",
+        "incorrect_feedback": "No, the correct answer is Yellow. Sunflowers are known for their cheerful yellow petals.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "Which part of the body is used for hearing?",
+        "options": ["Eyes", "Nose", "Ears", "Mouth"],
+        "answer": "Ears",
+        "correct_feedback": "Yes, that's right! We use our ears to hear sounds.",
+        "incorrect_feedback": "No, the correct answer is Ears. They help us listen to different sounds.",
+        "image": "images/quizimage.png"
+    },
+    {
+        "question": "What is the national bird of India?",
+        "options": ["Peacock", "Eagle", "Sparrow", "Parrot"],
+        "answer": "Peacock",
+        "correct_feedback": "Yes, that's right! The peacock is the national bird of India.",
+        "incorrect_feedback": "No, the correct answer is Peacock. It is admired for its beauty and grace.",
+        "image": "images/quizimage.png"
+    }
+]
+
+}

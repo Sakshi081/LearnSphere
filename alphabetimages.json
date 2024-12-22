@@ -1,0 +1,496 @@
+{
+    "a": [
+        {
+            "image": "static\\alphabetsimages\\aeroplane.jpg",
+            "description": "A for Aeroplane. Aeroplanes fly in the sky."
+        },
+        {
+            "image": "static\\alphabetsimages\\ant.jpg",
+            "description": "A for Ant. Ants are small insects."
+        },
+        {
+            "image": "static\\alphabetsimages\\apple.jpeg",
+            "description": "A for Apple. An apple is a round object."
+        },
+        {
+            "image": "static\\alphabetsimages\\astronaut.jpg",
+            "description": "A for Astronaut. Astronauts travel to space."
+        },
+        {
+            "image": "static\\alphabetsimages\\avacado.jpg",
+            "description": "A for Avocado. Avocados are healthy fruits."
+        }
+    ],
+    "b": [
+        {
+            "image": "static\\alphabetsimages\\ball.jpeg",
+            "description": "B for Ball. Balls are used in many sports."
+        },
+        {
+            "image": "static\\alphabetsimages\\bee.png",
+            "description": "B for Bee. Bees produce honey."
+        },
+        {
+            "image": "static\\alphabetsimages\\bell.jpg",
+            "description": "B for Bell. Bells ring to make a sound."
+        },
+        {
+            "image": "static\\alphabetsimages\\bulb.jpg",
+            "description": "B for Bulb. A bulb gives light."
+        }
+    ],
+    "c": [
+        {
+            "image": "static\\alphabetsimages\\cap.jpg",
+            "description": "C for Cap. Caps are worn on the head."
+        },
+        {
+            "image": "static\\alphabetsimages\\car.png",
+            "description": "C for Car. Cars are used for transportation."
+        },
+        {
+            "image": "static\\alphabetsimages\\carrot.jpg",
+            "description": "C for Carrot. Carrots are orange vegetables."
+        },
+        {
+            "image": "static\\alphabetsimages\\cat.png",
+            "description": "C for Cat. Cats are friendly animals."
+        },
+        {
+            "image": "static\\alphabetsimages\\cow.jpeg",
+            "description": "C for Cow. Cows give us milk."
+        }
+    ],
+    "d": [
+        {
+            "image": "static\\alphabetsimages\\dinosaur.png",
+            "description": "D for Dinosaur. Dinosaurs lived millions of years ago."
+        },
+        {
+            "image": "static\\alphabetsimages\\dog.jpeg",
+            "description": "D for Dog. Dogs are loyal pets."
+        },
+        {
+            "image": "static\\alphabetsimages\\doll.png",
+            "description": "D for Doll. Dolls are toys for kids."
+        },
+        {
+            "image": "static\\alphabetsimages\\duck.jpg",
+            "description": "D for Duck. Ducks can swim in water."
+        }
+    ],
+    "e": [
+        {
+            "image": "static\\alphabetsimages\\eagle.jpg",
+            "description": "E for Eagle. Eagles have sharp eyesight."
+        },
+        {
+            "image": "static\\alphabetsimages\\earth.jpeg",
+            "description": "E for Earth. Earth is our planet."
+        },
+        {
+            "image": "static\\alphabetsimages\\egg.png",
+            "description": "E for Egg. Eggs are a source of protein."
+        },
+        {
+            "image": "static\\alphabetsimages\\eight.png",
+            "description": "E for Eight. Eight is a number."
+        },
+        {
+            "image": "static\\alphabetsimages\\elephant.png",
+            "description": "E for Elephant. Elephants are large animals."
+        }
+    ],
+    "f": [
+        {
+            "image": "static\\alphabetsimages\\fan.jpg",
+            "description": "F for Fan. Fans help to keep us cool."
+        },
+        {
+            "image": "static\\alphabetsimages\\fire.jpg",
+            "description": "F for Fire. Fire provides warmth."
+        },
+        {
+            "image": "static\\alphabetsimages\\fish.jpg",
+            "description": "F for Fish. Fish live in water."
+        },
+        {
+            "image": "static\\alphabetsimages\\flower.png",
+            "description": "F for Flower. Flowers are beautiful and colorful."
+        },
+        {
+            "image": "static\\alphabetsimages\\frog.png",
+            "description": "F for Frog. Frogs can jump and swim."
+        }
+    ],
+
+    "g": [
+        {
+            "image": "static\\alphabetsimages\\ghost.webp",
+            "description": "G for Ghost. Ghosts are often seen in stories."
+        },
+        {
+            "image": "static\\alphabetsimages\\gift.jpg",
+            "description": "G for Gift. Gifts bring joy."
+        },
+        {
+            "image": "static\\alphabetsimages\\giraffe.jpeg",
+            "description": "G for Giraffe. Giraffes have long necks."
+        },
+        {
+            "image": "static\\alphabetsimages\\grapes.png",
+            "description": "G for Grapes. Grapes grow in bunches."
+        }
+        ],
+    "h": [
+        {
+            "image": "static\\alphabetsimages\\hand.jpeg",
+            "description": "H for Hand. Hands are used for holding things."
+        },
+        {
+            "image": "static\\alphabetsimages\\hat.png",
+            "description": "H for Hat. Hats are worn on the head."
+        },
+        {
+            "image": "static\\alphabetsimages\\heart.png",
+            "description": "H for Heart. The heart is a vital organ."
+        },
+        {
+            "image": "static\\alphabetsimages\\hen.jpeg",
+            "description": "H for Hen. Hens lay eggs."
+        },
+        {
+            "image": "static\\alphabetsimages\\hippo.jpg",
+            "description": "H for Hippo. Hippos live in rivers and lakes."
+            }
+        ],
+    "i": [
+        {
+            "image": "static\\alphabetsimages\\ice.jpeg",
+            "description": "I for Ice. Ice is frozen water."
+        },
+        {
+                "image": "static\\alphabetsimages\\icecream.png",
+                "description": "I for Ice Cream. Ice cream is a cold dessert."
+        },
+        {
+                "image": "static\\alphabetsimages\\ink.jpg",
+                "description": "I for Ink. Ink is used for writing."
+        },
+        {
+                "image": "static\\alphabetsimages\\iron.jpg",
+                "description": "I for Iron. Iron is used to press clothes."
+        }
+        ],
+    "j": [
+        {
+            "image": "static\\alphabetsimages\\jacket.png",
+            "description": "J for Jacket. Jackets keep us warm."
+        },
+        {
+            "image": "static\\alphabetsimages\\jam.jpeg",
+            "description": "J for Jam. Jam is made from fruits."
+        },
+        {
+            "image": "static\\alphabetsimages\\joker.png",
+            "description": "J for Joker. Jokers make people laugh."
+        },
+        {
+            "image": "static\\alphabetsimages\\jug.jpeg",
+            "description": "J for Jug. A jug holds liquids."
+        }
+        ],
+    "k": [
+        {
+            "image": "static\\alphabetsimages\\kangroo.jpeg",
+            "description": "K for Kangaroo. Kangaroos have pouches."
+        },
+        {
+            "image": "static\\alphabetsimages\\kettle.jpeg",
+            "description": "K for Kettle. Kettles are used to boil water."
+        },
+        {
+            "image": "static\\alphabetsimages\\king.jpeg",
+            "description": "K for King. A king rules a kingdom."
+        },
+        {
+            "image": "static\\alphabetsimages\\kite.png",
+            "description": "K for Kite. Kites fly in the sky."
+        },
+        {
+            "image": "static\\alphabetsimages\\kiwi.png",
+            "description": "K for Kiwi. Kiwi is a juicy fruit."
+        }
+        ],
+    "l": [
+        {
+            "image": "static\\alphabetsimages\\ladybug.jpeg",
+            "description": "L for Ladybug. Ladybugs are tiny insects."
+        },
+        {
+            "image": "static\\alphabetsimages\\lamp.png",
+            "description": "L for Lamp. Lamps give light."
+        },
+        {
+            "image": "static\\alphabetsimages\\leaf.webp",
+            "description": "L for Leaf. Leaves are green and grow on trees."
+        },
+        {
+            "image": "static\\alphabetsimages\\lemon.jpeg",
+            "description": "L for Lemon. Lemons are sour fruits."
+        },
+        {
+            "image": "static\\alphabetsimages\\lion.webp",
+            "description": "L for Lion. Lions are known as the king of the jungle."
+        }
+        ],
+    "m": [
+        {
+            "image": "static\\alphabetsimages\\man.png",
+            "description": "M for Man. A man is an adult male."
+        },
+        {
+            "image": "static\\alphabetsimages\\mango.webp",
+            "description": "M for Mango. Mango is the king of fruits."
+        },
+        {
+            "image": "static\\alphabetsimages\\moon.jpeg",
+            "description": "M for Moon. The moon shines at night."
+        },
+        {
+            "image": "static\\alphabetsimages\\mug.jpeg",
+            "description": "M for Mug. Mugs are used for drinking."
+        }
+    ],
+     "n": [
+        {
+            "image": "static\\alphabetsimages\\necklace.jpeg",
+            "description": "N for Necklace. Necklaces are jewelry worn around the neck."
+        },
+        {
+            "image": "static\\alphabetsimages\\nest.png",
+            "description": "N for Nest. Birds build nests to lay eggs."
+        },
+        {
+            "image": "static\\alphabetsimages\\nose.png",
+            "description": "N for Nose. The nose is used for smelling."
+        },
+        {
+            "image": "static\\alphabetsimages\\notebook.jpeg",
+            "description": "N for Notebook. Notebooks are used for writing."
+        }
+    ],
+    "o": [
+        {
+            "image": "static\\alphabetsimages\\octopus.jpeg",
+            "description": "O for Octopus. Octopuses have eight arms."
+        },
+        {
+            "image": "static\\alphabetsimages\\omelette.jpeg",
+            "description": "O for Omelette. Omelettes are made from eggs."
+        },
+        {
+            "image": "static\\alphabetsimages\\orange.jpeg",
+            "description": "O for Orange. Oranges are juicy fruits."
+        },
+        {
+            "image": "static\\alphabetsimages\\owl.png",
+            "description": "O for Owl. Owls are nocturnal birds."
+        }
+    ],
+    "p": [
+        {
+            "image": "static\\alphabetsimages\\parrot.png",
+            "description": "P for Parrot. Parrots are colorful birds."
+        },
+        {
+            "image": "static\\alphabetsimages\\pen.jpeg",
+            "description": "P for Pen. Pens are used for writing."
+        },
+        {
+            "image": "static\\alphabetsimages\\pencil.jpeg",
+            "description": "P for Pencil. Pencils are used for drawing."
+        },
+        {
+            "image": "static\\alphabetsimages\\penguine.jpeg",
+            "description": "P for Penguin. Penguins live in cold regions."
+        }
+    ],
+    "q": [
+        {
+            "image": "static\\alphabetsimages\\queen.png",
+            "description": "Q for Queen. A queen rules a kingdom."
+        },
+        {
+            "image": "static\\alphabetsimages\\question.png",
+            "description": "Q for Question. Questions help in learning."
+        },
+        {
+            "image": "static\\alphabetsimages\\quill.jpeg",
+            "description": "Q for Quill. Quills are feathers used for writing."
+        },
+        {
+            "image": "static\\alphabetsimages\\quilt.jpeg",
+            "description": "Q for Quilt. Quilts keep us warm."
+        }
+    ],
+    "r": [
+        {
+            "image": "static\\alphabetsimages\\rabbit.jpeg",
+            "description": "R for Rabbit. Rabbits have long ears."
+        },
+        {
+            "image": "static\\alphabetsimages\\raspberry.jpeg",
+            "description": "R for Raspberry. Raspberries are delicious berries."
+        },
+        {
+            "image": "static\\alphabetsimages\\rat.jpeg",
+            "description": "R for Rat. Rats are small animals."
+        },
+        {
+            "image": "static\\alphabetsimages\\rose.jpeg",
+            "description": "R for Rose. Roses are beautiful flowers."
+        }
+    ],
+    "s": [
+        {
+            "image": "static\\alphabetsimages\\sea.png",
+            "description": "S for Sea. Seas are large water bodies."
+        },
+        {
+            "image": "static\\alphabetsimages\\snake.jpeg",
+            "description": "S for Snake. Snakes slither on the ground."
+        },
+        {
+            "image": "static\\alphabetsimages\\star.jpeg",
+            "description": "S for Star. Stars twinkle in the night sky."
+        },
+        {
+            "image": "static\\alphabetsimages\\sun.jpeg",
+            "description": "S for Sun. The sun gives us light and heat."
+        }
+    ],
+    "t": [
+        {
+            "image": "static\\alphabetsimages\\tea.jpeg",
+            "description": "T for Tea. Tea is a popular beverage."
+        },
+        {
+            "image": "static\\alphabetsimages\\tiger.jpeg",
+            "description": "T for Tiger. Tigers are wild animals."
+        },
+        {
+            "image": "static\\alphabetsimages\\tomato.jpeg",
+            "description": "T for Tomato. Tomatoes are red vegetables."
+        },
+        {
+            "image": "static\\alphabetsimages\\tshirt.jpeg",
+            "description": "T for T-shirt. T-shirts are casual clothing."
+        }
+    ],
+    "u": [
+        {
+            "image": "static\\alphabetsimages\\umbrella.jpeg",
+            "description": "U for Umbrella. Umbrellas protect us from rain."
+        },
+        {
+            "image": "static\\alphabetsimages\\uniform.jpeg",
+            "description": "U for Uniform. Uniforms are worn at work or school."
+        },
+        {
+            "image": "static\\alphabetsimages\\uranus.jpg",
+            "description": "U for Uranus. Uranus is a planet in the solar system."
+        },
+        {
+            "image": "static\\alphabetsimages\\urn.webp",
+            "description": "U for Urn. Urns are used for storing ashes."
+        }
+    ],
+    "v": [
+        {
+            "image": "static\\alphabetsimages\\van.jpeg",
+            "description": "V for Van. Vans are large vehicles."
+        },
+        {
+            "image": "static\\alphabetsimages\\vase.jpeg",
+            "description": "V for Vase. Vases hold flowers."
+        },
+        {
+            "image": "static\\alphabetsimages\\vegetables.jpeg",
+            "description": "V for Vegetables. Vegetables are healthy to eat."
+        },
+        {
+            "image": "static\\alphabetsimages\\vulture.jpeg",
+            "description": "V for Vulture. Vultures are scavenger birds."
+        }
+    ],
+    "w": [
+        {
+            "image": "static\\alphabetsimages\\watch.jpeg",
+            "description": "W for Watch. Watches tell time."
+        },
+        {
+            "image": "static\\alphabetsimages\\water.jpeg",
+            "description": "W for Water. Water is essential for life."
+        },
+        {
+            "image": "static\\alphabetsimages\\watermelon.jpeg",
+            "description": "W for Watermelon. Watermelons are refreshing fruits."
+        },
+        {
+            "image": "static\\alphabetsimages\\whale.jpeg",
+            "description": "W for Whale. Whales are the largest animals in the ocean."
+        }
+    ],
+    "x": [
+        {
+            "image": "static\\alphabetsimages\\xmas tree.jpeg",
+            "description": "X for Xmas Tree. Xmas trees are decorated during Christmas."
+        },
+        {
+            "image": "static\\alphabetsimages\\xray.jpeg",
+            "description": "X for X-ray. X-rays are used to see inside the body."
+        },
+        {
+            "image": "static\\alphabetsimages\\xylophone.png",
+            "description": "X for Xylophone. Xylophones are musical instruments."
+        }
+    ],
+    "y": [
+        {
+            "image": "static\\alphabetsimages\\yarn.jpeg",
+            "description": "Y for Yarn. Yarn is used for knitting."
+        },
+        {
+            "image": "static\\alphabetsimages\\yogurt.jpeg",
+            "description": "Y for Yogurt. Yogurt is a dairy product."
+        },
+        {
+            "image": "static\\alphabetsimages\\yolk.jpeg",
+            "description": "Y for Yolk. The yolk is the yellow part of an egg."
+        },
+        {
+            "image": "static\\alphabetsimages\\yoyo.png",
+            "description": "Y for Yo-yo. Yo-yos are fun toys."
+        }
+    ],
+    "z": [
+        {
+            "image": "static\\alphabetsimages\\zebra.png",
+            "description": "Z for Zebra. Zebras have black and white stripes."
+        },
+        {
+            "image": "static\\alphabetsimages\\zero.jpeg",
+            "description": "Z for Zero. Zero is a number."
+        },
+        {
+            "image": "static\\alphabetsimages\\zigzag.png",
+            "description": "Z for Zigzag. Zigzag is a pattern with sharp angles."
+        },
+        {
+            "image": "static\\alphabetsimages\\zip.jpeg",
+            "description": "Z for Zip. Zips are used to fasten clothes."
+        }
+    ]
+}
+
