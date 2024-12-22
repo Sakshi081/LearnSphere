@@ -55,8 +55,7 @@ Follow the steps below to set up the project locally:
 4.Run the application:
 
     ```bash
-   Copy code
-   flask run
+      flask run
 
 ### Usage
 Open the application in your browser.
