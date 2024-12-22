@@ -1,4 +1,4 @@
-<img src="images/logofinal.png" alt="LOGO" width="500">
+<img src="images/logofinal.png" alt="LOGO" width="200">
 
 
 # LearnSphere: AI and AR-Powered Learning Platform
@@ -31,7 +31,7 @@ LearnSphere revolutionizes early childhood education with AR, AI, and gamified e
 ## Installation and Setup
 Follow the steps below to set up the project locally:
 
-<img src="images/TechStacklatest.png" alt="Tech Stack" width="500">
+<img src="images/TechStacklatest.png" alt="Tech Stack" width="300">
 
 ### Prerequisites
 - Python 3.8+
@@ -68,7 +68,7 @@ Open the application in your browser.
 Navigate through the child-friendly interface using voice commands or gestures.
 Engage in AR-based activities, games, and quizzes.
 
-<img src="images/webpage" alt="Screenshot of webpage" width="500">
+<img src="images/webpage.jpg" alt="Screenshot of webpage" width="400">
 
 
 
