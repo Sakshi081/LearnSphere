@@ -39,3 +39,29 @@ Follow the steps below to set up the project locally:
    ```bash
    git clone <repository-URL>
    cd LearnSphere
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3.Set up environment variables:
+  Create a .env file in the root directory and add the following:
+
+      ```bash
+      GOOGLE_API_KEY=your-google-key
+      FIREBASE_API_KEY=your-firebase-key
+      GEMINI_API_KEY=your-gemini-key
+
+4.Run the application:
+
+    ```bash
+   Copy code
+   flask run
+
+### Usage
+Open the application in your browser.
+Navigate through the child-friendly interface using voice commands or gestures.
+Engage in AR-based activities, games, and quizzes.
+
+
+
