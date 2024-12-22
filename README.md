@@ -44,17 +44,16 @@ Follow the steps below to set up the project locally:
    ```bash
    pip install -r requirements.txt
 
-3.Set up environment variables:
-  Create a .env file in the root directory and add the following:
-
-      ```bash
+3. Set up environment variables:
+Create a .env file in the root directory and add the following:
+   ```bash
       GOOGLE_API_KEY=your-google-key
       FIREBASE_API_KEY=your-firebase-key
       GEMINI_API_KEY=your-gemini-key
 
-4.Run the application:
+4. Run the application:
 
-    ```bash
+   ```bash
       flask run
 
 ### Usage
