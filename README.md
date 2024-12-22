@@ -1,10 +1,13 @@
-![LOGO](images/logofinal.png)
+<img src="images/logofinal.png" alt="LOGO" width="500">
+
+
 # LearnSphere: AI and AR-Powered Learning Platform
 LearnSphere revolutionizes early childhood education with AR, AI, and gamified experiences. Our platform creates personalized, multisensory learning environments for pre-primary children, fostering cognitive, linguistic, and motor skills. Inclusive and adaptive, we bridge traditional teaching with modern needs, empowering young learners to thrive.
 
 
 ---
-![Methodology](images/Flowchart.png)
+<img src="images/Asset 2.png" alt="Workflow" width="500">
+
 ## Features
 1. **Child-Friendly Interface:**  
    - Voice commands for easy navigation.  
@@ -28,7 +31,8 @@ LearnSphere revolutionizes early childhood education with AR, AI, and gamified e
 ## Installation and Setup
 Follow the steps below to set up the project locally:
 
-![TECH STACK](images/TechStacklatest.png)
+<img src="images/TechStacklatest.png" alt="Tech Stack" width="500">
+
 ### Prerequisites
 - Python 3.8+
 - Flask
@@ -63,6 +67,8 @@ Create a .env file in the root directory and add the following:
 Open the application in your browser.
 Navigate through the child-friendly interface using voice commands or gestures.
 Engage in AR-based activities, games, and quizzes.
+
+<img src="images/webpage" alt="Screenshot of webpage" width="500">
 
 
 
